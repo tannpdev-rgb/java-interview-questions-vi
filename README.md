@@ -1,253 +1,253 @@
-# java-interview-questions
+# câu hỏi phỏng vấn java
 
-Frequently asked Java Interview questions
+Các câu hỏi phỏng vấn Java thường gặp
 
-### Table of Contents
+### Mục lục
 
 <!-- TOC_START -->
-| No. | Questions |
+| Không. | Câu hỏi |
 | --- | --------- |
-| 1 | [What are the differences between JVM, JRE and JDK?](#what-are-the-differences-between-jvm-jre-and-jdk) |
-| 2 | [Why Java is platform-independent language](#why-java-is-platform-independent-language) |
-| 3 | [How does JVM works](#how-does-jvm-works) |
-| 4 | [What are the main features of Java](#what-are-the-main-features-of-java) |
-| 5 | [What is public static void main?](#what-is-public-static-void-main) |
-| 6 | [What is string constant pool](#what-is-string-constant-pool) |
-| 7 | [Why strings are immutable](#why-strings-are-immutable) |
-| 8 | [What is the difference between StringBuffer and StringBuilder](#what-is-the-difference-between-stringbuffer-and-stringbuilder) |
-| 9 | [What is the importance of hashCode() and equals() methods](#what-is-the-importance-of-hashcode-and-equals-methods) |
-| 10 | [What is the difference between checked and unchecked expceptions](#what-is-the-difference-between-checked-and-unchecked-expceptions) |
-| 11 | [What are wrapper classes](#what-are-wrapper-classes) |
-| 12 | [Why java is not pure object oriented language](#why-java-is-not-pure-object-oriented-language) |
-| 13 | [What is the difference between abstract class and interface](#what-is-the-difference-between-abstract-class-and-interface) |
-| 14 | [What are marker interfaces](#what-are-marker-interfaces) |
-| 15 | [What are collections in Java?](#what-are-collections-in-java) |
-| 16 | [What are the differences between arraylist and vector?](#what-are-the-differences-between-arraylist-and-vector) |
-| 17 | [What is finalize method? How do you override it?](#what-is-finalize-method-how-do-you-override-it) |
-| 18 | [What Is the Difference Between the Comparable and Comparator Interfaces](#what-is-the-difference-between-the-comparable-and-comparator-interfaces) |
-| 19 | [What Is an inner class](#what-is-an-inner-class) |
-| 20 | [What is the difference between final, finally, and finalize() in Java?](#what-is-the-difference-between-final-finally-and-finalize-in-java) |
-| 21 | [What is the difference between '==' and equals() method?](#what-is-the-difference-between--and-equals-method) |
-| 22 | [What is method overloading and method overriding?](#what-is-method-overloading-and-method-overriding) |
-| 23 | [What is the difference between HashMap and Hashtable?](#what-is-the-difference-between-hashmap-and-hashtable) |
-| 24 | [What is the difference between ArrayList and LinkedList?](#what-is-the-difference-between-arraylist-and-linkedlist) |
-| 25 | [What is Java Reflection API?](#what-is-java-reflection-api) |
-| 26 | [What are the different types of memory areas allocated by JVM?](#what-are-the-different-types-of-memory-areas-allocated-by-jvm) |
-| 27 | [What is the difference between throw and throws?](#what-is-the-difference-between-throw-and-throws) |
-| 28 | [What is a singleton class and how to create one?](#what-is-a-singleton-class-and-how-to-create-one) |
-| 29 | [What are Java 8 Stream API features?](#what-are-java-8-stream-api-features) |
-| 30 | [What is the difference between fail-fast and fail-safe iterators?](#what-is-the-difference-between-fail-fast-and-fail-safe-iterators) |
-| 31 | [What is the difference between process and thread?](#what-is-the-difference-between-process-and-thread) |
-| 32 | [What are the different ways to create a thread in Java?](#what-are-the-different-ways-to-create-a-thread-in-java) |
-| 33 | [What is synchronization in Java?](#what-is-synchronization-in-java) |
-| 34 | [What is deadlock and how to avoid it?](#what-is-deadlock-and-how-to-avoid-it) |
-| 35 | [What is the volatile keyword in Java?](#what-is-the-volatile-keyword-in-java) |
-| 36 | [What is the transient keyword in Java?](#what-is-the-transient-keyword-in-java) |
-| 37 | [What is serialization and deserialization?](#what-is-serialization-and-deserialization) |
-| 38 | [What are functional interfaces in Java?](#what-are-functional-interfaces-in-java) |
-| 39 | [What are lambda expressions in Java?](#what-are-lambda-expressions-in-java) |
-| 40 | [What is Optional class in Java 8?](#what-is-optional-class-in-java-8) |
-| 41 | [What is the difference between Collection and Collections?](#what-is-the-difference-between-collection-and-collections) |
-| 42 | [What is the difference between Set and List?](#what-is-the-difference-between-set-and-list) |
-| 43 | [What is the difference between HashSet and TreeSet?](#what-is-the-difference-between-hashset-and-treeset) |
-| 44 | [What is the diamond problem in Java?](#what-is-the-diamond-problem-in-java) |
-| 45 | [What is dependency injection?](#what-is-dependency-injection) |
-| 46 | [What is the difference between shallow copy and deep copy?](#what-is-the-difference-between-shallow-copy-and-deep-copy) |
-| 47 | [What are design patterns in Java?](#what-are-design-patterns-in-java) |
-| 48 | [What is the factory design pattern?](#what-is-the-factory-design-pattern) |
-| 49 | [What is the builder design pattern?](#what-is-the-builder-design-pattern) |
-| 50 | [What is the difference between Heap and Stack memory?](#what-is-the-difference-between-heap-and-stack-memory) |
-| 51 | [What is garbage collection in Java?](#what-is-garbage-collection-in-java) |
-| 52 | [What are the different types of garbage collectors in Java?](#what-are-the-different-types-of-garbage-collectors-in-java) |
-| 53 | [What is the difference between wait() and sleep() methods?](#what-is-the-difference-between-wait-and-sleep-methods) |
-| 54 | [What is the difference between notify() and notifyAll()?](#what-is-the-difference-between-notify-and-notifyall) |
-| 55 | [What is an immutable class and how to create one?](#what-is-an-immutable-class-and-how-to-create-one) |
-| 56 | [What is the difference between String, StringBuilder, and StringBuffer?](#what-is-the-difference-between-string-stringbuilder-and-stringbuffer) |
-| 57 | [What is the difference between static and instance variables?](#what-is-the-difference-between-static-and-instance-variables) |
-| 58 | [What is the purpose of the super keyword?](#what-is-the-purpose-of-the-super-keyword) |
-| 59 | [What is the purpose of the this keyword?](#what-is-the-purpose-of-the-this-keyword) |
-| 60 | [What are generics in Java?](#what-are-generics-in-java) |
-| 61 | [What is type erasure in Java generics?](#what-is-type-erasure-in-java-generics) |
+| 1 | [Sự khác biệt giữa JVM, JRE và JDK là gì?](#what-are-the-differences-between-jvm-jre-and-jdk) |
+| 2 | [Tại sao Java là ngôn ngữ độc lập với nền tảng](#why-java-is-platform-independent-language) |
+| 3 | [JVM hoạt động như thế nào](#how-does-jvm-works) |
+| 4 | [Các tính năng chính của Java là gì](#what-are-the-main-features-of-java) |
+| 5 | [public static void main là gì?](#what-is-public-static-void-main) |
+| 6 | [Nhóm hằng số chuỗi là gì](#what-is-string-constant-pool) |
+| 7 | [Tại sao chuỗi là bất biến](#why-strings-are-immutable) |
+| 8 | [Sự khác biệt giữa StringBuffer và StringBuilder](#what-is-the-difference-between-stringbuffer-and-stringbuilder) |
+| 9 | [Tầm quan trọng của phương thức hashCode() và Equals() là gì](#what-is-the-importance-of-hashcode-and-equals-methods) |
+| 10 | [Sự khác biệt giữa các trường hợp ngoại lệ được kiểm tra và không được kiểm tra là gì](#what-is-the-difference-between-checked-and-unchecked-expceptions) |
+| 11 | [Các lớp bao bọc là gì](#what-are-wrapper-classes) |
+| 12 | [Tại sao java không phải là ngôn ngữ hướng đối tượng thuần túy](#why-java-is-not-pure-object-oriented-language) |
+| 13 | [Sự khác biệt giữa lớp trừu tượng và giao diện](#what-is-the-difference-between-abstract-class-and-interface) |
+| 14 | [Giao diện điểm đánh dấu là gì](#what-are-marker-interfaces) |
+| 15 | [Bộ sưu tập trong Java là gì?](#what-are-collections-in-java) |
+| 16 | [Sự khác biệt giữa danh sách mảng và vector là gì?](#what-are-the-differences-between-arraylist-and-vector) |
+| 17 | [Phương pháp hoàn thiện là gì? Làm thế nào để bạn ghi đè nó?](#what-is-finalize-method-how-do-you-override-it) |
+| 18 | [Sự khác biệt giữa giao diện so sánh và giao diện so sánh là gì](#what-is-the-difference-between-the-comparable-and-comparator-interfaces) |
+| 19 | [Lớp bên trong là gì](#what-is-an-inner-class) |
+| 20 | [Sự khác biệt giữa cuối cùng, cuối cùng và hoàn thiện() trong Java là gì?](#what-is-the-difference-between-final-finally-and-finalize-in-java) |
+| 21 | [Sự khác biệt giữa phương thức '==' và bằng () là gì?](#what-is-the-difference-between--and-equals-method) |
+| 22 | [Nạp chồng phương thức và ghi đè phương thức là gì?](#what-is-method-overloading-and-method-overriding) |
+| 23 | [Sự khác biệt giữa HashMap và Hashtable là gì?](#what-is-the-difference-between-hashmap-and-hashtable) |
+| 24 | [Sự khác biệt giữa ArrayList và LinkedList là gì?](#what-is-the-difference-between-arraylist-and-linkedlist) |
+| 25 | [API phản chiếu Java là gì?](#what-is-java-reflection-api) |
+| 26 | [Các loại vùng nhớ khác nhau được JVM phân bổ là gì?](#what-are-the-different-types-of-memory-areas-allocated-by-jvm) |
+| 27 | [Sự khác biệt giữa ném và ném là gì?](#what-is-the-difference-between-throw-and-throws) |
+| 28 | [Lớp singleton là gì và làm thế nào để tạo một lớp?](#what-is-a-singleton-class-and-how-to-create-one) |
+| 29 | [Các tính năng API luồng Java 8 là gì?](#what-are-java-8-stream-api-features) |
+| 30 | [Sự khác biệt giữa các trình vòng lặp không nhanh và không an toàn là gì?](#what-is-the-difference-between-fail-fast-and-fail-safe-iterators) |
+| 31 | [Sự khác biệt giữa quá trình và chủ đề là gì?](#what-is-the-difference-between-process-and-thread) |
+| 32 | [Các cách khác nhau để tạo một luồng trong Java là gì?](#what-are-the-different-ways-to-create-a-thread-in-java) |
+| 33 | [Đồng bộ hóa trong Java là gì?](#what-is-synchronization-in-java) |
+| 34 | [Bế tắc là gì và làm thế nào để tránh nó?](#what-is-deadlock-and-how-to-avoid-it) |
+| 35 | [Từ khóa dễ bay hơi trong Java là gì?](#what-is-the-volatile-keyword-in-java) |
+| 36 | [Từ khóa tạm thời trong Java là gì?](#what-is-the-transient-keyword-in-java) |
+| 37 | [Tuần tự hóa và giải tuần tự hóa là gì?](#what-is-serialization-and-deserialization) |
+| 38 | [Giao diện chức năng trong Java là gì?](#what-are-functional-interfaces-in-java) |
+| 39 | [Biểu thức lambda trong Java là gì?](#what-are-lambda-expressions-in-java) |
+| 40 | [Lớp tùy chọn trong Java 8 là gì?](#what-is-optional-class-in-java-8) |
+| 41 | [Sự khác biệt giữa Bộ sưu tập và Bộ sưu tập là gì?](#what-is-the-difference-between-collection-and-collections) |
+| 42 | [Sự khác biệt giữa Bộ và Danh sách là gì?](#what-is-the-difference-between-set-and-list) |
+| 43 | [Sự khác biệt giữa HashSet và TreeSet là gì?](#what-is-the-difference-between-hashset-and-treeset) |
+| 44 | [Vấn đề kim cương trong Java là gì?](#what-is-the-diamond-problem-in-java) |
+| 45 | [Tiêm phụ thuộc là gì?](#what-is-dependency-injection) |
+| 46 | [Sự khác biệt giữa bản sao nông và bản sao sâu là gì?](#what-is-the-difference-between-shallow-copy-and-deep-copy) |
+| 47 | [Các mẫu thiết kế trong Java là gì?](#what-are-design-patterns-in-java) |
+| 48 | [Mẫu thiết kế nhà xưởng là gì?](#what-is-the-factory-design-pattern) |
+| 49 | [Mẫu thiết kế của người xây dựng là gì?](#what-is-the-builder-design-pattern) |
+| 50 | [Sự khác biệt giữa bộ nhớ Heap và Stack là gì?](#what-is-the-difference-between-heap-and-stack-memory) |
+| 51 | [Thu gom rác trong Java là gì?](#what-is-garbage-collection-in-java) |
+| 52 | [Các loại trình thu gom rác khác nhau trong Java là gì?](#what-are-the-different-types-of-garbage-collectors-in-java) |
+| 53 | [Sự khác biệt giữa các phương thức wait() và sleep() là gì?](#what-is-the-difference-between-wait-and-sleep-methods) |
+| 54 | [Sự khác biệt giữa thông báo() và thông báoAll() là gì?](#what-is-the-difference-between-notify-and-notifyall) |
+| 55 | [Lớp bất biến là gì và làm thế nào để tạo một lớp?](#what-is-an-immutable-class-and-how-to-create-one) |
+| 56 | [Sự khác biệt giữa String, StringBuilder và StringBuffer là gì?](#what-is-the-difference-between-string-stringbuilder-and-stringbuffer) |
+| 57 | [Sự khác biệt giữa các biến tĩnh và biến thể là gì?](#what-is-the-difference-between-static-and-instance-variables) |
+| 58 | [Mục đích của từ khóa super là gì?](#what-is-the-purpose-of-the-super-keyword) |
+| 59 | [Mục đích của từ khóa này là gì?](#what-is-the-purpose-of-the-this-keyword) |
+| 60 | [Generics trong Java là gì?](#what-are-generics-in-java) |
+| 61 | [Xóa kiểu trong Java Generics là gì?](#what-is-type-erasure-in-java-generics) |
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
 
-1. ### What are the differences between JVM, JRE and JDK?
+1. ### Sự khác biệt giữa JVM, JRE và JDK là gì?
 
-   The main differences between JVM, JRE and JDK are listed below,
+   Sự khác biệt chính giữa JVM, JRE và JDK được liệt kê bên dưới,
 
-   **JVM:** Java Virtual Machine(JVM) is an abstract machine that provides a runtime environment for the execution of Java ByteCode. i.e, It is part of Java Runtime Environment(JRE) and responsible for converting bytecode into machine-readable code. JVM is platform dependent but it interprets the bytecode which is platform independent. As a result, Java applications to run on different platforms and operating systems.
+   **JVM:** Máy ảo Java (JVM) là một máy trừu tượng cung cấp môi trường thời gian chạy để thực thi Java ByteCode. tức là, Nó là một phần của Môi trường chạy thi hành Java (JRE) và chịu trách nhiệm chuyển đổi mã byte thành mã có thể đọc được bằng máy. JVM phụ thuộc vào nền tảng nhưng nó diễn giải mã byte độc ​​lập với nền tảng. Kết quả là các ứng dụng Java có thể chạy trên các nền tảng và hệ điều hành khác nhau.
 
-   **JRE:** Java Runtime Environment (JRE) is an installation package that provides Java Virtual Machine (JVM), class libraries and other components to run the Java program or application on any machine.
+   **JRE:** Môi trường chạy thi hành Java (JRE) là gói cài đặt cung cấp Máy ảo Java (JVM), thư viện lớp và các thành phần khác để chạy chương trình hoặc ứng dụng Java trên bất kỳ máy nào.
 
-   **JDK:** Java Development Kit (JDK) is a software development kit used to develop and execute Java programs. It includes tools for developing, monitoring and debugging java programs, along with JRE to execute those respective programs.
+   **JDK:** Bộ công cụ phát triển Java (JDK) là bộ công cụ phát triển phần mềm dùng để phát triển và thực thi các chương trình Java. Nó bao gồm các công cụ để phát triển, giám sát và gỡ lỗi các chương trình java, cùng với JRE để thực thi các chương trình tương ứng đó.
 
-   The pictorial representation of these three components looks as follows,
+   Biểu diễn bằng hình ảnh của ba thành phần này trông như sau,
 
-   <img src="images/JVM_JRE_JDK.png" width="400" height="400" />
+   <img src="images/JVM_JRE_JDK.png" width="400" Height="400" />
 
-   **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-2. ### Why Java is platform-independent language
+2. ### Tại sao Java là ngôn ngữ độc lập với nền tảng
 
-   Java is platform-independent language because java programs are compiled to a bytecode that can be run on any device or OS which has a Java Virtual Machine(JVM). This is possible due to JVM's "Write Once, Run Anywhere"(WORA) capability. Due to this reason, you can write a Java program on one platform such as Windows machine and then run it on a different platform such as macOS or Linux machine without making any modifications to the code.
+   Java là ngôn ngữ độc lập với nền tảng vì các chương trình java được biên dịch thành mã byte có thể chạy trên bất kỳ thiết bị hoặc hệ điều hành nào có Máy ảo Java (JVM). Điều này có thể thực hiện được nhờ khả năng "Viết một lần, chạy mọi nơi"(WORA) của JVM. Vì lý do này, bạn có thể viết chương trình Java trên một nền tảng như máy Windows và sau đó chạy chương trình đó trên một nền tảng khác như máy macOS hoặc Linux mà không cần thực hiện bất kỳ sửa đổi nào đối với mã.
 
-   Below diagram explains the platform independence feature of Java,
+   Sơ đồ dưới đây giải thích tính năng độc lập nền tảng của Java,
 
    ![Screenshot](images/JavaIndependent.png)
 
-   **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-3. ### How does JVM works
+3. ### JVM hoạt động như thế nào
 
-   JVM(Java Virtual Machine) is an abstract runtime engine to run java applications. It is part of Java Runtime Environment(JRE) to execute the bytecode generated by java compilers. JVM brings WORA(Write Once Read Anywhere) behavior in which you can write java program on one system and expected to run on any java enabled systems without any modifications. Upon compiling .java file to .class file(contains byte code), .class file goes into several steps described by JVM.
+   JVM (Máy ảo Java) là một công cụ thời gian chạy trừu tượng để chạy các ứng dụng java. Nó là một phần của Môi trường chạy thi hành Java (JRE) để thực thi mã byte được tạo bởi trình biên dịch java. JVM mang đến hành vi WORA (Viết một lần đọc mọi nơi) trong đó bạn có thể viết chương trình java trên một hệ thống và dự kiến ​​sẽ chạy trên mọi hệ thống hỗ trợ java mà không cần bất kỳ sửa đổi nào. Khi biên dịch tệp .java thành tệp .class (chứa mã byte), tệp .class sẽ thực hiện một số bước được mô tả bởi JVM.
 
-   JVM consists of three main components:
+   JVM bao gồm ba thành phần chính:
 
-   1. Class Loader subsystem
-   2. Runtime data area/ memory area
-   3. Execution engine
+   1. Hệ thống con Trình nạp lớp
+   2. Vùng dữ liệu/ vùng nhớ thời gian chạy
+   3. Động cơ thực thi
 
-   Let's understand the JVM architecture which includes the above three components,
+   Hãy hiểu kiến ​​trúc JVM bao gồm ba thành phần trên,
 
    ![Screenshot](images/JVMArchitecture.png)
 
-   1. **Class Loader Subsystem:** The class loaders are responsible to load the class files dynamically into JVM during the runtime. The first class that loaded into the memory is usually the class that contains `main` method.This subsystem performs three main activities.
+   1. **Hệ thống con trình nạp lớp:** Trình nạp lớp có trách nhiệm tải động các tệp lớp vào JVM trong thời gian chạy. Lớp đầu tiên được nạp vào bộ nhớ thường là lớp chứa `main` phương pháp. Hệ thống con này thực hiện ba hoạt động chính.
 
-      1. **Loading:** As part of this step, the class loader will read the .class file and generate the corresponding bytecode. The following important information of the class file will be saved in method area of JVM.
+      1. **Đang tải:** Là một phần của bước này, trình nạp lớp sẽ đọc tệp .class và tạo mã byte tương ứng. Thông tin quan trọng sau đây của tệp lớp sẽ được lưu trong vùng phương thức của JVM.
 
-         1. The Fully Qualified Class Name(FQCN) of the loaded class.
-         2. Immediate parent class.
-         3. Variables, method and modifier information
-         4. Whether .class is related to Class, Interface or Enum.
+         1. Tên lớp đủ điều kiện (FQCN) của lớp được tải.
+         2. Lớp cha mẹ ngay lập tức.
+         3. Thông tin về các biến, phương pháp và sửa đổi
+         4. .class có liên quan đến Lớp, Giao diện hay Enum hay không.
 
-         JVM also creates an object of **Class** type(available from **java.lang** package) to represent the file in the heap memory. But it will be created only on the very first time when the class file is loaded into JVM. This object is helpful for the developers to get class level information.
+         JVM cũng tạo một đối tượng thuộc loại **Class** (có sẵn từ gói **java.lang**) để thể hiện tệp trong bộ nhớ heap. Nhưng nó sẽ chỉ được tạo vào lần đầu tiên khi tệp lớp được tải vào JVM. Đối tượng này rất hữu ích cho các nhà phát triển để có được thông tin về cấp lớp.
 
-      2. **Linking:** Linking is the process of taking a class or interface and combining it into the runtime state of the Java virtual machine, preparing it for execution. It involves the following steps:
+      2. **Liên kết:** Liên kết là quá trình lấy một lớp hoặc giao diện và kết hợp nó vào trạng thái thời gian chạy của máy ảo Java, chuẩn bị cho nó thực thi. Nó bao gồm các bước sau:
 
-         1. **Verification:** This phase ensure the correctness of `.class` file by checking whether the file is properly formatted or not, and the code generated by a valid compiler or not. If the validation is failed, you will receive `java.lang.VerifyError` through **ByteCodeVerifier**.
+         1. **Xác minh:** Giai đoạn này đảm bảo tính chính xác của `.class` tệp bằng cách kiểm tra xem tệp có được định dạng đúng hay không và mã được tạo bởi trình biên dịch hợp lệ hay không. Nếu xác thực không thành công, bạn sẽ nhận được `java.lang.VerifyError` thông qua **ByteCodeVerifier**.
 
-         2. **Preparation:** In this step, JVM allocates memory for all static variables within classes/interfaces and assign them with default values.
+         2. **Chuẩn bị:** Trong bước này, JVM phân bổ bộ nhớ cho tất cả các biến tĩnh trong các lớp/giao diện và gán chúng với các giá trị mặc định.
 
-         3. **Resolution:** In this step, all symbolic references to classes or interfaces are replaced with their actual memory locations. This transformation is known as **Dynamic Linking**.
+         3. **Giải pháp:** Trong bước này, tất cả các tham chiếu tượng trưng đến các lớp hoặc giao diện được thay thế bằng vị trí bộ nhớ thực của chúng. Sự chuyển đổi này được gọi là **Liên kết động**.
 
-      3. **Initialization:** This is the last phase of class loading, where all static variables are replaced with their original values and static block gets executed.
+      3. **Khởi tạo:** Đây là giai đoạn cuối cùng của quá trình tải lớp, trong đó tất cả các biến tĩnh được thay thế bằng giá trị ban đầu của chúng và khối tĩnh được thực thi.
 
-   There are three built-in classloaders available in Java:
+   Có ba trình nạp lớp tích hợp sẵn trong Java:
 
-   1. **Bootstrap ClassLoader:** This is a root class loader and typically represented as null. It loads the core java libraries located in <JAVA_HOME>/jmods folder like `java.lang`, `java.util` etc. This class loader is written in native code unlike other class loaders.
+   1. **Bootstrap ClassLoader:** Đây là trình nạp lớp gốc và thường được biểu diễn dưới dạng rỗng. Nó tải các thư viện java cốt lõi nằm trong thư mục <JAVA_HOME>/jmods như `java.lang`, `java.util` v.v. Trình nạp lớp này được viết bằng mã gốc không giống như các trình nạp lớp khác.
 
-   2. **Platform ClassLoader:** This class loader is responsible for loading platform classes such as Java SE platform APIs, their implementation classes and JDK-specific run-time classes. For example, the platform classes such as `java.net.http`, `java.sql`, `org.graalvm.compile`(JDK Specific).
+   2. **Trình tải lớp nền tảng:** Trình tải lớp này chịu trách nhiệm tải các lớp nền tảng chẳng hạn như API nền tảng Java SE, các lớp triển khai của chúng và các lớp thời gian chạy dành riêng cho JDK. Ví dụ: các lớp nền tảng như `java.net.http`, `java.sql`, `org.graalvm.compile`(JDK cụ thể).
 
-   3. **System/Application classLoader:** This class loader is responsible for loading all the classes configured from the classpath. The classpath can contain classes from directories, JAR files etc.
+   3. **Trình nạp lớp hệ thống/ứng dụng:** Trình nạp lớp này chịu trách nhiệm tải tất cả các lớp được định cấu hình từ đường dẫn lớp. Đường dẫn lớp có thể chứa các lớp từ các thư mục, tệp JAR, v.v.
 
-   The above class loaders follows a class loader hierarchy ensuring a delegation mechanism. That means, if the class is loaded and its not found by application classloader, the request is delegated upwards to the platform application class loader. But even it is not found by platform class loader then further delegate upwards to Bootstrap class loader.
+   Các trình nạp lớp ở trên tuân theo hệ thống phân cấp của trình nạp lớp để đảm bảo cơ chế ủy nhiệm. Điều đó có nghĩa là, nếu lớp được tải và trình nạp lớp ứng dụng không tìm thấy nó, thì yêu cầu sẽ được ủy quyền lên trình tải lớp ứng dụng nền tảng. Nhưng thậm chí nó không được tìm thấy bởi trình nạp lớp nền tảng, sau đó ủy quyền tiếp tục cho trình nạp lớp Bootstrap.
 
-   **Note:** Apart from the above built-in class loaders, you can also create your own user defined class loader for ensuring application independence. For example, Tomcat webserver use this approach(WebAppClassLoader) to ensure that different web applications to load and isolate classes/jars.
+   **Lưu ý:** Ngoài các trình nạp lớp tích hợp sẵn ở trên, bạn cũng có thể tạo trình nạp lớp do người dùng xác định của riêng mình để đảm bảo tính độc lập của ứng dụng. Ví dụ: máy chủ web Tomcat sử dụng phương pháp này (WebAppClassLoader) để đảm bảo rằng các ứng dụng web khác nhau sẽ tải và tách biệt các lớp/lọ.
 
-   2. **Runtime data area/ memory area:**
+   2. **Vùng dữ liệu thời gian chạy/vùng bộ nhớ:**
 
-      The runtime data areas are mainly divided into five components,
+      Các vùng dữ liệu thời gian chạy chủ yếu được chia thành năm thành phần,
 
-      1. **Method:** The method area stores below class level information,
+      1. **Phương thức:** Vùng phương thức lưu trữ thông tin ở cấp độ lớp bên dưới,
 
-         1. ClassLoader reference
-         2. Runtime constant pool
-         3. Field data such as name, type, modifiers, attributes etc of each field.
-         4. Method data such as name, return type, modifiers, attributes, parameter types etc of each field.
-         5. Constructor data such as parameter types and their order for each constructor.
+         1. Tham chiếu ClassLoader
+         2. Nhóm hằng số thời gian chạy
+         3. Dữ liệu trường như tên, loại, công cụ sửa đổi, thuộc tính, v.v. của từng trường.
+         4. Dữ liệu phương thức như tên, kiểu trả về, bộ sửa đổi, thuộc tính, loại tham số, v.v. của từng trường.
+         5. Dữ liệu của hàm tạo như các loại tham số và thứ tự của chúng cho mỗi hàm tạo.
 
-      This is a shared resource and only one method area is available per JVM.
+      Đây là tài nguyên được chia sẻ và chỉ có một vùng phương thức có sẵn cho mỗi JVM.
 
-      2. **Heap:** This is the runtime data area in which all the objects and their respective instance variables are stored. The heap is created upon JVM startup and there is only one heap per JVM.
+      2. **Heap:** Đây là vùng dữ liệu thời gian chạy trong đó tất cả các đối tượng và các biến thể hiện tương ứng của chúng được lưu trữ. Vùng heap được tạo khi khởi động JVM và chỉ có một vùng heap cho mỗi JVM.
 
-      3. **Stack:** Each thread which is created in JVM, a separate runtime-stack is also created at the same time. The local variables, method calls and intermediate results are stored in this stack area. But if the thread requires a larger stack size than what is available, JVM throws `StackOverflow` error.
+      3. **Ngăn xếp:** Mỗi luồng được tạo trong JVM, một ngăn xếp thời gian chạy riêng biệt cũng được tạo cùng lúc. Các biến cục bộ, lệnh gọi phương thức và kết quả trung gian được lưu trữ trong vùng ngăn xếp này. Nhưng nếu luồng yêu cầu kích thước ngăn xếp lớn hơn kích thước có sẵn, JVM sẽ đưa ra `StackOverflow` lỗi.
 
-      For each method call, a stack frame is created in the stack memory area and it is going to be destroyed upon method execution gets completed. Each stack frame is further divided into three sections.
+      Đối với mỗi lệnh gọi phương thức, một khung ngăn xếp được tạo trong vùng bộ nhớ ngăn xếp và nó sẽ bị hủy khi quá trình thực thi phương thức hoàn tất. Mỗi khung ngăn xếp được chia thành ba phần.
 
-      1. **Local variables:** For each frame, all the local variables and their values are stored in an array format.
-      2. **Operand stack:** In each frame, the variables and operators required for mathematical operations are stored in LIFO stack.
-      3. **Frame data:** This area holds all symbolic references related to constant pool resolution and method returned data. It is also used to store a reference to the exception table which has all the information related to catch block in case of exceptions.
+      1. **Biến cục bộ:** Đối với mỗi khung, tất cả biến cục bộ và giá trị của chúng được lưu trữ ở định dạng mảng.
+      2. **Ngăn xếp toán hạng:** Trong mỗi khung, các biến và toán tử cần thiết cho các phép toán được lưu trữ trong ngăn xếp LIFO.
+      3. **Dữ liệu khung:** Khu vực này chứa tất cả các tham chiếu tượng trưng liên quan đến độ phân giải nhóm không đổi và dữ liệu trả về của phương thức. Nó cũng được sử dụng để lưu trữ một tham chiếu đến bảng ngoại lệ có tất cả thông tin liên quan đến khối bắt trong trường hợp có ngoại lệ.
 
-      **Note:** Stack area is not a shared resource.
+      **Lưu ý:** Vùng ngăn xếp không phải là tài nguyên được chia sẻ.
 
-      4. **PC Registers:** JVM supports multiple threads at the same time and each thread has separate PC registers. These registers are used to store address of the currently executed JVM instruction. After completion of current instruction, PC register is going to be updated with next instruction.
+      4. **Thanh ghi PC:** JVM hỗ trợ nhiều luồng cùng lúc và mỗi luồng có các thanh ghi PC riêng biệt. Các thanh ghi này được sử dụng để lưu trữ địa chỉ của lệnh JVM hiện đang được thực thi. Sau khi hoàn thành lệnh hiện tại, thanh ghi PC sẽ được cập nhật với lệnh tiếp theo.
 
-      5. **Native method stack:** This stack is used to hold the information related to native methods written in C, C++ and Assembly.
+      5. **Ngăn xếp phương thức gốc:** Ngăn xếp này được sử dụng để chứa thông tin liên quan đến các phương thức gốc được viết bằng C, C++ và Assembly.
 
-   3. **Execution engine:** The execution engine is responsible for executing the bytecode that is loaded into the JVM. It communicates with various runtime data memories of JVM during the execution. Once the program is finished executing, the memory in the runtime data area will be released.
+   3. **Công cụ thực thi:** Công cụ thực thi chịu trách nhiệm thực thi mã byte được tải vào JVM. Nó giao tiếp với các bộ nhớ dữ liệu thời gian chạy khác nhau của JVM trong quá trình thực thi. Sau khi chương trình thực thi xong, bộ nhớ trong vùng dữ liệu thời gian chạy sẽ được giải phóng.
 
-      It contains three main components for executing the class files.
+      Nó chứa ba thành phần chính để thực thi các tệp lớp.
 
-      1. **Interpreter:** The interpreter reads and executes the bytecode instructions line by line to convert into respective machine language instructions. The main advantage of interpreter is that it is very quick to load and execute the code in a faster pace. But whenever it executes the same code blocks again and again, the interpreter executes repeatedly. So the interpreter cannot be optimized the runtime in case of repeated code execution.
+      1. **Trình thông dịch:** Trình thông dịch đọc và thực thi từng dòng lệnh mã byte để chuyển đổi thành các lệnh ngôn ngữ máy tương ứng. Ưu điểm chính của trình thông dịch là tải và thực thi mã rất nhanh với tốc độ nhanh hơn. Nhưng bất cứ khi nào nó thực thi lặp đi lặp lại cùng một khối mã, trình thông dịch sẽ thực thi lặp đi lặp lại. Vì vậy, trình thông dịch không thể tối ưu hóa thời gian chạy trong trường hợp thực thi mã lặp lại.
 
-      2. **JIT compiler:** Just-In-Time Compiler(JIT Compiler) is introduced to overcome the disadvantages of interpreter, especially with repeated code execution. JIT compiler can remember the repeated code block segments and they will stored as native code in the cache. Whenever JIT compiler reads the same code block again, it will use the native code stored in the cache.
+      2. **Trình biên dịch JIT:** Just-In-Time Compiler (Trình biên dịch JIT) được ra mắt nhằm khắc phục những nhược điểm của trình thông dịch, đặc biệt là với việc thực thi mã lặp đi lặp lại. Trình biên dịch JIT có thể ghi nhớ các đoạn khối mã lặp lại và chúng sẽ được lưu dưới dạng mã gốc trong bộ đệm. Bất cứ khi nào trình biên dịch JIT đọc lại cùng một khối mã, nó sẽ sử dụng mã gốc được lưu trong bộ đệm.
 
-      JIT compiler has further divided into the following components,
+      Trình biên dịch JIT đã chia thành các thành phần sau,
 
-      1. **Intermediate Code Generator:** It generates intermediate code.
-      2. **Code Optimizer:** It optimizes the intermediate code for better performance.
-      3. **Target Code Generator:** It converts intermediate code into native machine code.
-      4. **Profiler:** This is used to identify Hotspots(i.e, repeatedly executing methods) and replace hotspots with respective native code.
+      1. **Trình tạo mã trung gian:** Nó tạo mã trung gian.
+      2. **Trình tối ưu hóa mã:** Nó tối ưu hóa mã trung gian để có hiệu suất tốt hơn.
+      3. **Trình tạo mã mục tiêu:** Nó chuyển đổi mã trung gian thành mã máy gốc.
+      4. **Profiler:** Điều này được sử dụng để xác định các Điểm phát sóng (tức là các phương thức thực thi liên tục) và thay thế các điểm phát sóng bằng mã gốc tương ứng.
 
-      5. **Garbage Collector:** Garbage Collector(GC) is responsible to collect and remove unreferenced objects from the heap area. This memory management feature is used to reclaim the unused memory and makes free space for newer objects. This happens in two phases:
+      5. **Bộ thu gom rác:** Bộ thu gom rác(GC) chịu trách nhiệm thu thập và loại bỏ các đối tượng không được tham chiếu khỏi vùng heap. Tính năng quản lý bộ nhớ này được sử dụng để lấy lại bộ nhớ chưa sử dụng và tạo không gian trống cho các đối tượng mới hơn. Điều này xảy ra trong hai giai đoạn:
 
-         1. **Mark:** In this step, GC identifies the unused objects in memory
-         2. **Sweep:** As part of this step, GC removes the objects identified in the previous phase.
+         1. **Mark:** Ở bước này, GC xác định các đối tượng không sử dụng trong bộ nhớ
+         2. **Quét:** Là một phần của bước này, GC sẽ loại bỏ các đối tượng được xác định ở giai đoạn trước.
 
-   4. **Java Native Interface (JNI) :** JNI is used as a bridge between java method calls and native libraries written in C, C++ etc. Sometimes it is required to invoke native code for specific underlined hardeware.
-   5. **Native Method Libraries :** These are collection of native libraries(C/C++/Assembly) which are required by execution engine. These libraries loaded through JNI and represented in the form of `.dll` or `.so` files.
+   4. **Giao diện gốc Java (JNI):** JNI được sử dụng làm cầu nối giữa lệnh gọi phương thức java và thư viện gốc được viết bằng C, C++, v.v. Đôi khi, cần phải gọi mã gốc cho phần cứng được gạch chân cụ thể.
+   5. **Thư viện phương thức gốc:** Đây là tập hợp các thư viện gốc (C/C++/Assembly) được yêu cầu bởi công cụ thực thi. Các thư viện này được tải thông qua JNI và được biểu diễn dưới dạng `.dll` hoặc `.so` tập tin.
 
-   **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-4. ### What are the main features of Java
+4. ### Các tính năng chính của Java là gì
 
-   Java has many important features which makes it unique among the popular programming languages. Some of those features are:
+   Java có nhiều tính năng quan trọng khiến nó trở nên độc đáo trong số các ngôn ngữ lập trình phổ biến. Một số tính năng đó là:
 
-   1. **Simple:** Java is a simple programming language and easy to understand without any complexities unlike in the prior programming languages.
-      Some of the reasons for simplicity are: 1. It is based on C++ which makes it easy for new developers to learn it quickly. 2. Java doens't support pointers(unlike C or C++) considering its complexity and security vulnerabilities. Also, operator overloading doesn't exist in Java. 3. There is no need to remove unreferenced objects because it will be taken care by Automatic Garbage Collection.
+   1. **Đơn giản:** Java là ngôn ngữ lập trình đơn giản và dễ hiểu mà không có bất kỳ sự phức tạp nào không giống như các ngôn ngữ lập trình trước đó.
+      Một số lý do cho sự đơn giản là: 1. Nó dựa trên C++ giúp các nhà phát triển mới dễ dàng học nó một cách nhanh chóng. 2. Java không hỗ trợ con trỏ (không giống như C hoặc C++) vì tính phức tạp và các lỗ hổng bảo mật của nó. Ngoài ra, nạp chồng toán tử không tồn tại trong Java. 3. Không cần phải loại bỏ các đối tượng không được tham chiếu vì việc này sẽ được Bộ thu gom rác tự động xử lý.
 
-   2. **Object-oriented:** Java is an Object Oriented programming(OOPS) language, which means everything in Java is represented with different types of classes and objects. This OOPS is a methodology that simplifies software development and maintenance by following the below features.
+   2. **Hướng đối tượng:** Java là ngôn ngữ lập trình hướng đối tượng (OOPS), có nghĩa là mọi thứ trong Java đều được thể hiện bằng các loại lớp và đối tượng khác nhau. OOPS này là một phương pháp giúp đơn giản hóa việc phát triển và bảo trì phần mềm bằng cách thực hiện theo các tính năng dưới đây.
 
-      1. Abstraction
-      2. Encapsulation
-      3. Inheritance
-      4. Polymorphism
+      1. Trừu tượng
+      2. đóng gói
+      3. Kế thừa
+      4. Đa hình
 
-   3. **Portable:** Java is portable because the bytecode generated on one machine can be taken to any platform for the execution.
+   3. **Di động:** Java có tính di động vì mã byte được tạo trên một máy có thể được đưa tới bất kỳ nền tảng nào để thực thi.
 
-   4. **Platform Independent:** The java compiler converts the source code to bytecode and then JVM executes the bytecode to produce the output. If you compile a java program on specific operating system(let's say Windows), it can run on any other platform(Windows, Linux or Mac) with that platform specific JVM. This is the reason why we call Java as a platform-independent language.
+   4. **Nền tảng độc lập:** Trình biên dịch java chuyển đổi mã nguồn thành mã byte và sau đó JVM thực thi mã byte để tạo đầu ra. Nếu bạn biên dịch một chương trình java trên hệ điều hành cụ thể (giả sử là Windows), thì chương trình đó có thể chạy trên bất kỳ nền tảng nào khác (Windows, Linux hoặc Mac) với JVM dành riêng cho nền tảng đó. Đây là lý do tại sao chúng tôi gọi Java là ngôn ngữ độc lập với nền tảng.
 
-   5. **Robust:** Java is robust with many safe guards to ensure reliable code. It has the below safe guards,
+   5. **Mạnh mẽ:** Java mạnh mẽ với nhiều biện pháp bảo vệ an toàn để đảm bảo mã đáng tin cậy. Nó có những người bảo vệ an toàn bên dưới,
 
-      1. It is capable of handling unexpected termination of a program through exception handling feature.
-      2. It provides strong memory management through Garbage Collector from JVM, which collects all the unused variables and objects to free up the memory space. Whereas in prior programming languages, programmers are solely responsible for allocating and deallocating memory spaces.
+      1. Nó có khả năng xử lý việc chấm dứt chương trình bất ngờ thông qua tính năng xử lý ngoại lệ.
+      2. Nó cung cấp khả năng quản lý bộ nhớ mạnh mẽ thông qua Garbage Collector từ JVM, thu thập tất cả các biến và đối tượng không sử dụng để giải phóng không gian bộ nhớ. Trong khi đó ở các ngôn ngữ lập trình trước đó, lập trình viên hoàn toàn chịu trách nhiệm phân bổ và giải phóng không gian bộ nhớ.
 
-   6. **Secured:** Java is extremely safe due to various features listed below,
+   6. **Bảo mật:** Java cực kỳ an toàn nhờ có nhiều tính năng khác nhau được liệt kê bên dưới,
 
-      1. There are no explicit pointers. So you cannot access out-of-bound array. If you still try to access an array, it will show an `ArrayIndexOutOfBound` Exception. So it is impossible to exploit in Java with security flaws like stack corruption or buffer overflow.
-      2. The programs runs in an secured environment(JVM) that is independent of operating system(OS).
-      3. Java has bytecode verifier that checks the code blocks for any illegal code that violates the access right to objects.
+      1. Không có con trỏ rõ ràng. Vì vậy, bạn không thể truy cập mảng ngoài giới hạn. Nếu bạn vẫn cố truy cập vào một mảng, nó sẽ hiển thị một `ArrayIndexOutOfBound` Ngoại lệ. Vì vậy, không thể khai thác trong Java với các lỗi bảo mật như hỏng ngăn xếp hoặc tràn bộ đệm.
+      2. Các chương trình chạy trong môi trường bảo mật (JVM) độc lập với hệ điều hành (OS).
+      3. Java có trình xác minh mã byte để kiểm tra các khối mã xem có bất kỳ mã bất hợp pháp nào vi phạm quyền truy cập vào các đối tượng hay không.
 
-   7. **Distributed:** Java supports the creation of distributed applications by using Remote Method Invocation(RMI) and Enterprise Java Beans. The java programs are easily distributed on one or more systems through internet connection.
+   7. **Phân phối:** Java hỗ trợ tạo các ứng dụng phân tán bằng cách sử dụng Lệnh gọi phương thức từ xa (RMI) và Đậu Java doanh nghiệp. Các chương trình java được phân phối dễ dàng trên một hoặc nhiều hệ thống thông qua kết nối internet.
 
-   8. **Multi-threaded:** Java supports multithreading feature, which allows concurrent execution of several parts of a program for maximum utilization of the CPU. This is possible through multiple threads running the program simultaneously.
+   8. **Đa luồng:** Java hỗ trợ tính năng đa luồng, cho phép thực thi đồng thời một số phần của chương trình để tận dụng tối đa CPU. Điều này có thể thực hiện được thông qua nhiều luồng chạy chương trình cùng một lúc.
 
-   9. **Compiled and Interpreted:** It provides both compilation and interpretation of programs. The programs are compiled by compiler first and the generated bytecode is going to be interpreted.
+   9. **Biên dịch và phiên dịch:** Nó cung cấp cả việc biên dịch và giải thích các chương trình. Các chương trình được biên dịch bởi trình biên dịch trước tiên và mã byte được tạo sẽ được diễn giải.
 
-   10. **High performance:** Java bytecode is close to native code, so it runs more quickly than other conventionally interpreted programming languages. Ofcourse, it is not as fast as compiled languages like C or C++. JVM also uses JIT compiler which enables high performance through below features.
-   11. Method inlining
-   12. Dead code elimination
-   13. Null check elimination
-   14. Constant folding
+   10. **Hiệu suất cao:** Mã byte Java gần giống với mã gốc nên chạy nhanh hơn các ngôn ngữ lập trình được diễn giải thông thường khác. Tất nhiên, nó không nhanh bằng các ngôn ngữ được biên dịch như C hoặc C++. JVM cũng sử dụng trình biên dịch JIT cho phép đạt hiệu suất cao thông qua các tính năng bên dưới.
+   11. Phương thức nội tuyến
+   12. Loại bỏ mã chết
+   13. Loại bỏ kiểm tra null
+   14. Gấp liên tục
 
-   **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-5. ### What is public static void main?
+5. ### public static void main là gì?
 
-   The `main()` method acts as a starting point for JVM to start the execution of a Java program. i.e, JVM doesn't execute the code if there is no main method in the code. The signature of main method should follow specific pattern for the JVM to recognize it as a entry point. Since it is an important method of Java, you need to have proper understanding of its signature in detail.
+   các `main()` phương thức này đóng vai trò là điểm khởi đầu để JVM bắt đầu thực thi chương trình Java. tức là JVM không thực thi mã nếu không có phương thức chính trong mã. Chữ ký của phương thức chính phải tuân theo mẫu cụ thể để JVM nhận ra nó là điểm vào. Vì đây là một phương thức quan trọng của Java nên bạn cần có sự hiểu biết đúng đắn về chữ ký của nó một cách chi tiết.
 
-   The signature of main method for displaying "Hello World" looks like below,
+   Chữ ký của phương thức chính để hiển thị "Hello World" trông như bên dưới,
 
    ```java
    public static void main(String[] args) {
@@ -255,53 +255,53 @@ Frequently asked Java Interview questions
    }
    ```
 
-   When `java.exe` parses the command line, it generates a new String array and invokes the main() method. Let's describe each word in the statement,
+   Khi `java.exe` phân tích dòng lệnh, nó tạo ra một mảng String mới và gọi phương thức main(). Hãy mô tả từng từ trong câu lệnh,
 
-   1. Public: The public access modifier is accessible everywhere and it enables JVM can invoke it from outside the class as it is not present in the current class. Otherwise, you will receive an error saying "Main method not found in class".
+   1. Công khai: Công cụ sửa đổi truy cập công khai có thể truy cập được ở mọi nơi và nó cho phép JVM có thể gọi nó từ bên ngoài lớp vì nó không có trong lớp hiện tại. Nếu không, bạn sẽ nhận được thông báo lỗi "Không tìm thấy phương thức chính trong lớp".
 
-   2. Static: This static keyword is used to make `main()` method as a class related method so that JVM can invoke it without instantiating the class. It is also helpful to avoid unnecessary memory usage with object just for calling main method.
+   2. Tĩnh: Từ khóa tĩnh này được sử dụng để thực hiện `main()` phương thức này làm phương thức liên quan đến lớp để JVM có thể gọi nó mà không cần khởi tạo lớp. Nó cũng hữu ích để tránh việc sử dụng bộ nhớ không cần thiết với đối tượng chỉ để gọi phương thức chính.
 
-   3. Void: The void keyword is used to specify that a method doesn’t return anything. Since main() method doesn't return anything, its return type is void. Once the main method terminates, the java program terminates as well.
+   3. Void: Từ khóa void được sử dụng để chỉ định rằng một phương thức không trả về bất cứ thứ gì. Vì phương thức main() không trả về bất cứ thứ gì nên kiểu trả về của nó là void. Khi phương thức chính kết thúc, chương trình java cũng chấm dứt.
 
-   4. Main: The "main" method name is an identifier that the JVM looks for as the starting point of the Java program.
+   4. Chính: Tên phương thức "chính" là mã định danh mà JVM tìm kiếm làm điểm bắt đầu của chương trình Java.
 
-   5. String[] args: This is an array of strings which stores arguments passed by command line while starting a program.
+   5. String[] args: Đây là một mảng các chuỗi lưu trữ các đối số được truyền bởi dòng lệnh trong khi khởi động chương trình.
 
-   **Note:** You can create any number of main methods through overloading features. i.e, Multiple main methods can be created with different parameters.
+   **Lưu ý:** Bạn có thể tạo bất kỳ số lượng phương thức chính nào thông qua các tính năng nạp chồng. tức là, Nhiều phương thức chính có thể được tạo với các tham số khác nhau.
 
-   **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-6. ### What is string constant pool
+6. ### Nhóm hằng chuỗi là gì
 
-   String constant pool is a special storage space inside the heap memory area where string literals are stored. It is also known as **String pool** or **String Intern Pool**. This is privately maintained by String class and it is empty by default. Whenever you create a new string object, JVM checks for presence of string object in the string pool. If the string value is already present, the same object reference is shared with the variable, else a new string is created in the pool with the variable reference stored in stack area.
+   Nhóm hằng chuỗi là một không gian lưu trữ đặc biệt bên trong vùng bộ nhớ heap nơi lưu trữ các chuỗi ký tự. Nó còn được gọi là **String pool** hoặc **String Intern Pool**. Điều này được duy trì riêng bởi lớp String và nó trống theo mặc định. Bất cứ khi nào bạn tạo một đối tượng chuỗi mới, JVM sẽ kiểm tra sự hiện diện của đối tượng chuỗi trong nhóm chuỗi. Nếu giá trị chuỗi đã có sẵn thì tham chiếu đối tượng tương tự sẽ được chia sẻ với biến, nếu không thì một chuỗi mới sẽ được tạo trong nhóm với tham chiếu biến được lưu trữ trong vùng ngăn xếp.
 
-   **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-7. ### Why strings are immutable
+7. ### Tại sao chuỗi không thể thay đổi
 
-   Strings are immutable, that means the contents of string objects can't be modified after their creation. i.e, When you try to alter the string, it creates a new string. Due to this behavior, the internal state of a string remains the same throughout the execution of the program. This characteristic of immutability helps with the benefits of caching, security, synchronization, and performance.
+   Chuỗi là bất biến, điều đó có nghĩa là nội dung của đối tượng chuỗi không thể sửa đổi sau khi tạo. tức là khi bạn cố gắng thay đổi chuỗi, nó sẽ tạo ra một chuỗi mới. Do hành vi này, trạng thái bên trong của chuỗi vẫn giữ nguyên trong suốt quá trình thực thi chương trình. Đặc tính bất biến này giúp mang lại lợi ích cho bộ nhớ đệm, bảo mật, đồng bộ hóa và hiệu suất.
 
-   **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-8. ### What is the difference between StringBuffer and StringBuilder
+8. ### Sự khác biệt giữa StringBuffer và StringBuilder là gì
 
-   String is an immutable class to represent sequence of characters. Java also provided mutable version of String class through StringBuffer and StringBuilder. Even though both these classes are mutable, there are many differences between StringBuffer and StringBuilder.
+   Chuỗi là một lớp bất biến để biểu diễn chuỗi ký tự. Java cũng cung cấp phiên bản có thể thay đổi của lớp String thông qua StringBuffer và StringBuilder. Mặc dù cả hai lớp này đều có thể thay đổi được nhưng có nhiều điểm khác biệt giữa StringBuffer và StringBuilder.
 
-   Some of the major differences in a tabular form:
+   Một số khác biệt chính ở dạng bảng:
 
-   | StringBuffer                                                                                                                     | StringBuilder                                                                                                                            |
+   | Bộ đệm chuỗi | StringBuilder |
    | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-   | StringBuffer was introduced in Java 1.0 version                                                                                  | StringBuilder was introduced in Java 1.5 version                                                                                         |
-   | StringBuffer is synchronized(thread safe). That means two or more threads cannot call the methods of StringBuffer simultaneously | StringBuilder is non-synchronized(not thread safe). That means two or more threads can call the methods of StringBuilder simultaneously. |
-   | Due to Synchronization, StringBuffer is slower than StringBuilder                                                                | StringBuilder is faster than StringBuffer because there won't be any preliminary checks for multiple threads                             |
+   | StringBuffer được giới thiệu trong phiên bản Java 1.0 | StringBuilder được giới thiệu trong phiên bản Java 1.5 |
+   | StringBuffer được đồng bộ hóa (luồng an toàn). Điều đó có nghĩa là hai hoặc nhiều luồng không thể gọi các phương thức của StringBuffer cùng một lúc | StringBuilder không được đồng bộ hóa (không an toàn cho luồng). Điều đó có nghĩa là hai hoặc nhiều luồng có thể gọi các phương thức của StringBuilder cùng một lúc. |
+   | Do đồng bộ hóa nên StringBuffer chậm hơn StringBuilder | StringBuilder nhanh hơn StringBuffer vì sẽ không có bất kỳ kiểm tra sơ bộ nào cho nhiều luồng |
 
-   **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-9. ### What is the importance of hashCode() and equals() methods
+9. ### Tầm quan trọng của phương thức hashCode() và Equals() là gì
 
-   Since both `equals()` and `hashCode()` methods are available in Object class(i.e, Java.lang.object), every java class gets the default implementation of equals and hashCode methods. These methods work together to verify if two objects have the same value or not.
+   Vì cả hai `equals()` Và `hashCode()` các phương thức có sẵn trong lớp Object (tức là Java.lang.object), mọi lớp java đều được triển khai mặc định các phương thức bằng và hashCode. Các phương thức này phối hợp với nhau để xác minh xem hai đối tượng có cùng giá trị hay không.
 
-   **1. equals:** The `equals()` method is used to compare equality of two Objects. By default their implementation compares the identities of the object. The Object class defined `equals()` method as follows,
+   **1. bằng:** `equals()` phương pháp được sử dụng để so sánh sự bình đẳng của hai Đối tượng. Theo mặc định, việc triển khai của chúng sẽ so sánh danh tính của đối tượng. Lớp đối tượng được xác định `equals()` phương pháp như sau,
 
    ```java
    public boolean equals(Object obj) {
@@ -309,50 +309,50 @@ Frequently asked Java Interview questions
    }
    ```
 
-   There are some rules need to be followed to use equals method:
+   Có một số quy tắc cần phải được tuân theo để sử dụng phương thức bằng:
 
-   1. **Reflexive:** For any object x, `x.equals(x)` should return `true`.
-   2. **Symmetric:** For any two objects x and y, `x.equals(y)` should return `true` if and only if `y.equals(x)` returns `true`.
-   3. **Transitive:** For multiple objects x, y, and z, `if x.equals(y)` returns `true` and `y.equals(z)` returns `true`, then `x.equals(z)` should return `true`.
-   4. **Consistent:** For any two objects x and y, multiple invocations of `x.equals(y)` should return same result(`true` or `false`), unless any of the object properties is modified that is being used in the equals() method implementation.
+   1. **Phản xạ:** Với mọi vật x, `x.equals(x)` nên quay lại `true`.
+   2. **Đối xứng:** Với hai đối tượng x và y bất kỳ, `x.equals(y)` nên quay lại `true` nếu và chỉ khi `y.equals(x)` trả lại `true`.
+   3. **Transitive:** Đối với nhiều đối tượng x, y và z, `if x.equals(y)` trả lại `true` Và `y.equals(z)` trả lại `true`, sau đó `x.equals(z)` nên quay lại `true`.
+   4. **Nhất quán:** Đối với hai đối tượng x và y bất kỳ, nhiều lệnh gọi `x.equals(y)` sẽ trả về kết quả tương tự (`true` hoặc `false`), trừ khi bất kỳ thuộc tính đối tượng nào được sửa đổi đang được sử dụng trong triển khai phương thức bằng().
 
-   **2. hashCode:** The `hashCode()` method returns the integer hash code value of the object. This method must be overridden in every class which overrides `equals()` method. The general contract of hashCode is:
+   **2. mã băm:** `hashCode()` phương thức trả về giá trị mã băm số nguyên của đối tượng. Phương thức này phải được ghi đè trong mọi lớp ghi đè `equals()` phương pháp. Hợp đồng chung của hashCode là:
 
-   1. While execution of the application, the multiple invocations of `hashCode()` on the object should return the same integer value, unless the object property used in the `equals()` method is being modified.
-   2. During the multiple executions of the application, the object's hashCode can change.
-   3. If two objects are equal based on `equals()` method, then their object's hash code must be same.
-   4. If two objects are unequal based on `equals()` method, their hash code value may or may not be equal.
+   1. Trong khi thực thi ứng dụng, nhiều lời gọi của `hashCode()` trên đối tượng sẽ trả về cùng một giá trị nguyên, trừ khi thuộc tính đối tượng được sử dụng trong `equals()` phương pháp đang được sửa đổi.
+   2. Trong quá trình thực thi ứng dụng nhiều lần, hashCode của đối tượng có thể thay đổi.
+   3. Nếu hai đối tượng bằng nhau dựa trên `equals()` phương thức, thì mã băm của đối tượng của chúng phải giống nhau.
+   4. Nếu hai đối tượng không bằng nhau dựa trên `equals()` phương thức, giá trị mã băm của chúng có thể bằng hoặc không bằng nhau.
 
-   Together, the implementation of `equals()` and `hashCode()` should follow these rules.
+   Cùng nhau thực hiện các `equals()` Và `hashCode()` nên tuân theo những quy tắc này.
 
-   1. If `x.equals(y)` is true, then `x.hashCode() === y.hashCode()` should always be true.
-   2. If `x.hashCode() === y.hashCode()` is true, then it doesn't required to be `x.equals(y)` always true.
+   1. Nếu như `x.equals(y)` là đúng thì `x.hashCode() === y.hashCode()` phải luôn luôn đúng.
+   2. Nếu như `x.hashCode() === y.hashCode()` là đúng thì không cần thiết phải như vậy `x.equals(y)` luôn đúng.
 
-   **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-10. ### What is the difference between checked and unchecked expceptions
+10. ### Sự khác biệt giữa các trường hợp ngoại lệ được kiểm tra và không được kiểm tra là gì
 
-    An exception is an event that interrupts the normal flow the program execution. There are two types of exceptions,
+    Một ngoại lệ là một sự kiện làm gián đoạn quá trình thực hiện chương trình thông thường. Có hai loại ngoại lệ,
 
-    1. Checked exceptions
-    2. Unchecked exceptions
+    1. Đã kiểm tra ngoại lệ
+    2. Ngoại lệ không được kiểm tra
 
-    The hierarchical structure of exceptions is categorized as shown below,
+    Cấu trúc phân cấp của các ngoại lệ được phân loại như dưới đây,
 
     ![Screenshot](images/CheckedVsUncheckedException.png)
 
-    The exceptions which are checked at compile time are known as checked exceptions. If some code inside a method throws this checked exception, then either you need to handle(or caught) the exception using **try/catch** block or declare in the method signature using **thows** keyword.
+    Các ngoại lệ được kiểm tra tại thời điểm biên dịch được gọi là ngoại lệ được kiểm tra. Nếu một số mã bên trong một phương thức ném ra ngoại lệ đã kiểm tra này, thì bạn cần xử lý (hoặc bắt) ngoại lệ đó bằng cách sử dụng khối **try/catch** hoặc khai báo trong chữ ký phương thức bằng từ khóa **thows**.
 
-    Some of the common checked exceptions are,
+    Một số trường hợp ngoại lệ được kiểm tra phổ biến là,
 
     1. IOException
-    2. FileNotFoundException
-    3. ClassNotFoundException
-    4. InterruptedException
-    5. SQLException
-    6. ParseException
+    2. Tệp không tìm thấy ngoại lệ
+    3. LớpNotFoundNgoại lệ
+    4. Ngoại lệ bị gián đoạn
+    5. Ngoại lệ SQL
+    6. Phân tích ngoại lệ
 
-    For example, the following class has two methods which throws checked(`FileNotFoundException`) exceptions from FileInputStream constructor. This is due to accessing input file which doesn't exist. You can handle them either using try/catch block or declaring thows keyword in the method signature.
+    Ví dụ: lớp sau có hai phương thức ném check(`FileNotFoundException`) ngoại lệ từ hàm tạo FileInputStream. Điều này là do truy cập vào tệp đầu vào không tồn tại. Bạn có thể xử lý chúng bằng cách sử dụng khối try/catch hoặc khai báo từ khóa thos trong chữ ký phương thức.
 
     ```java
         import java.io.*;
@@ -376,17 +376,17 @@ Frequently asked Java Interview questions
         }
     ```
 
-    Whereas the exceptions which are not checked at compile time are known as unchecked exceptions. All the exceptions under Error and RuntimeException comes under unchecked exceptions.
+    Trong khi đó, các ngoại lệ không được kiểm tra tại thời điểm biên dịch được gọi là ngoại lệ không được kiểm tra. Tất cả các ngoại lệ trong Lỗi và RuntimeException đều nằm trong các ngoại lệ không được kiểm tra.
 
-    Some of the common unchecked exceptions are,
+    Một số trường hợp ngoại lệ không được kiểm tra phổ biến là,
 
-    1. NullPointerException
-    2. ArrayIndexOutOfBoundsException
-    3. ArithmeticException
-    4. NumberFormatException
-    5. IllegalThreadStateException
+    1. NullPointerNgoại lệ
+    2. ArrayIndexOutOfBoundsNgoại lệ
+    3. Ngoại lệ số học
+    4. SốĐịnh dạngNgoại lệ
+    5. Bất hợp phápThreadStateException
 
-    For example, the following method doesn't have any errors during compile time. But it will throw `ArithmeticException` during runtime because of division by zero.
+    Ví dụ: phương thức sau không có bất kỳ lỗi nào trong thời gian biên dịch. Nhưng nó sẽ ném `ArithmeticException` trong thời gian chạy vì chia cho số 0.
 
     ```java
     class MyUncheckedException {
@@ -400,30 +400,30 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-11. ### What are wrapper classes
+11. ### Lớp bao bọc là gì
 
-    Wrapper classes provides the mechanism to convert primitive types into object types and vice versa. Since Java is an object-oriented programming language, and many APIs and libraries in Java require objects instead primitive types. For example, data structures in collection framework, utility classes from `java.utils.*`,cloning process, Serialization, Synchronization etc require object type.
+    Các lớp Wrapper cung cấp cơ chế chuyển đổi các kiểu nguyên thủy thành các kiểu đối tượng và ngược lại. Vì Java là ngôn ngữ lập trình hướng đối tượng và nhiều API cũng như thư viện trong Java yêu cầu các đối tượng thay vì các kiểu nguyên thủy. Ví dụ: cấu trúc dữ liệu trong khung bộ sưu tập, các lớp tiện ích từ `java.utils.*`,quá trình nhân bản, Tuần tự hóa, Đồng bộ hóa, v.v. yêu cầu loại đối tượng.
 
-    The following table represent primitives and their respective wrapper classes.
+    Bảng sau biểu thị các nguyên hàm và các lớp bao bọc tương ứng của chúng.
 
-    | Primitive data type | Wrapper class |
+    | Kiểu dữ liệu nguyên thủy | Lớp bao bọc |
     | ------------------- | ------------- |
-    | byte                | Byte          |
-    | short               | Short         |
-    | int                 | Integer       |
-    | float               | Float         |
-    | double              | Double        |
-    | long                | Long          |
-    | boolean             | Boolean       |
-    | char                | Character     |
+    | thay đổi | Trao đổi |
+    | ngắn | Ngắn |
+    | int | Số nguyên |
+    | phao | Phao |
+    | đôi | Đôi |
+    | dài | Dài |
+    | boolean | Boolean |
+    | char | Nhân vật |
 
-    You can use `.valueOf` methods from wrapper classes to convert primitive to object type, and the same way wrapper class methods like `intValue`, `doubleValue` etc used to convert wrapper class to primitive type. But this manual process can be automated.
+    Bạn có thể sử dụng `.valueOf` các phương thức từ các lớp trình bao bọc để chuyển đổi kiểu nguyên thủy thành kiểu đối tượng và cách tương tự các phương thức của lớp trình bao bọc như `intValue`, `doubleValue` vv được sử dụng để chuyển đổi lớp bao bọc thành kiểu nguyên thủy. Nhưng quá trình thủ công này có thể được tự động hóa.
 
-    1. **autoboxing**
+    1. **hộp thư tự động**
 
-    The automatic conversion of primitive to object(corresponding wrapper class) is known as **autoboxing**. The following example demonstrate how the conversion works,
+    Việc tự động chuyển đổi nguyên thủy thành đối tượng (lớp trình bao bọc tương ứng) được gọi là **autoboxing**. Ví dụ sau đây minh họa cách chuyển đổi hoạt động,
 
     ```java
     public class AutoboxingDemo{
@@ -437,8 +437,8 @@ Frequently asked Java Interview questions
     }
     ```
 
-    2. **unboxing**
-       The automatic conversion of wrapper class to primitive is known as **unboxing**. The following example demonstrate both manual and automatic conversion,
+    2. **mở hộp**
+       Việc tự động chuyển đổi lớp trình bao bọc thành lớp gốc được gọi là **unboxing**. Ví dụ sau minh họa cả chuyển đổi thủ công và tự động,
 
     ```java
     public class UnboxingDemo{
@@ -452,47 +452,47 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Note:** These autoboxing and unboxing features are available from JDK1.5 version onwards.
+    **Lưu ý:** Các tính năng tự động đóng hộp và mở hộp này có sẵn từ phiên bản JDK1.5 trở đi.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-12. ### Why java is not pure object oriented language
+12. ### Tại sao java không phải là ngôn ngữ hướng đối tượng thuần túy
 
-    Java is not a fully object-oriented programming language because of two main reasons.
+    Java không phải là ngôn ngữ lập trình hướng đối tượng hoàn toàn vì hai lý do chính.
 
-    1. It supports primitive data types like int, byte, long, short, etc., which are not objects. Even though you can convert primitive data types to objects using wrapper classes, it does not make Java a pure object-oriented language. Because these objects are not originally associated with Java and internally it uses operations like Unboxing and Autoboxing. That means even you use wrapper classes, under the hood it uses primitive types for the calculation.
+    1. Nó hỗ trợ các kiểu dữ liệu nguyên thủy như int, byte, long, short, v.v., không phải là đối tượng. Mặc dù bạn có thể chuyển đổi các kiểu dữ liệu nguyên thủy thành các đối tượng bằng cách sử dụng các lớp trình bao bọc, nhưng điều đó không làm cho Java trở thành ngôn ngữ hướng đối tượng thuần túy. Bởi vì các đối tượng này ban đầu không được liên kết với Java và bên trong nó sử dụng các hoạt động như Unboxing và Autoboxing. Điều đó có nghĩa là ngay cả khi bạn sử dụng các lớp trình bao bọc, nó vẫn sử dụng các kiểu nguyên thủy để tính toán.
 
-    2. Both static variables and methods can be accessed without using an object. Instead, they are associated with classes, which is against to the object-oriented principle where everything should be an object.
+    2. Cả biến và phương thức tĩnh đều có thể được truy cập mà không cần sử dụng đối tượng. Thay vào đó, chúng được liên kết với các lớp, điều này đi ngược lại nguyên tắc hướng đối tượng trong đó mọi thứ phải là một đối tượng.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-13. ### What is the difference between abstract class and interface
+13. ### Sự khác biệt giữa lớp trừu tượng và giao diện là gì
 
-    Both Abstract class and interface are used to define contracts in object-oriented programming. But there are some key differences between them as shown below,
+    Cả lớp trừu tượng và giao diện đều được sử dụng để xác định hợp đồng trong lập trình hướng đối tượng. Nhưng có một số khác biệt chính giữa chúng như được hiển thị bên dưới,
 
-    | Abstract class                                                                                          | Interface                                                                                                          |
+    | Lớp trừu tượng | Giao diện |
     | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-    | The `abstract` keyword is used to declare abstract class and it can be extended using `extends` keyword | The `interface` keyword is used to declare interface and it can extend another interface only.                     |
-    | The abstract class contains abstract and non-abstract methods                                           | Interface can have abstract methods only. But it is possible to have default and static methods from Java8 onwards |
-    | It supports final, non-final, static and non-static variables                                           | It supports only final and static variables.                                                                       |
-    | It doens't support multiple inheritance                                                                 | Interface supports multiple inheritance                                                                            |
-    | It can have access modifiers such as public, protected, and private for their methods and properties    | It can only have public access                                                                                     |
+    | các `abstract` từ khóa được sử dụng để khai báo lớp trừu tượng và nó có thể được mở rộng bằng cách sử dụng `extends` từ khóa | các `interface` từ khóa được sử dụng để khai báo giao diện và nó chỉ có thể mở rộng giao diện khác.                     |
+    | Lớp trừu tượng chứa các phương thức trừu tượng và không trừu tượng | Giao diện chỉ có thể có các phương thức trừu tượng. Nhưng có thể có các phương thức mặc định và tĩnh từ Java8 trở đi |
+    | Nó hỗ trợ các biến cuối cùng, không phải cuối cùng, tĩnh và không tĩnh | Nó chỉ hỗ trợ các biến cuối cùng và tĩnh.                                                                       |
+    | Nó không hỗ trợ đa kế thừa | Giao diện hỗ trợ đa kế thừa |
+    | Nó có thể có các công cụ sửa đổi quyền truy cập như công khai, được bảo vệ và riêng tư cho các phương thức và thuộc tính của chúng | Nó chỉ có thể có quyền truy cập công khai |
 
-    **Note:** Both Abstract class and interfaces cannot be instantiated.
+    **Lưu ý:** Cả lớp Trừu tượng và giao diện đều không thể khởi tạo được.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-14. ### What are marker interfaces
+14. ### Giao diện điểm đánh dấu là gì
 
-    Marker interfaces are interfaces that don't have any fields, methods, or constants inside of it. They are also known as empty interfaces or tag interfaces. Examples of marker interface are Serializable, Cloneable and Remote interface. The purpose of marker interfaces are to provide run-time type information about an object to JVM and Compiler. They are mainly used in API development and in frameworks like Spring to provide additional information to the class.
+    Giao diện điểm đánh dấu là các giao diện không có bất kỳ trường, phương thức hoặc hằng số nào bên trong nó. Chúng còn được gọi là giao diện trống hoặc giao diện thẻ. Ví dụ về giao diện điểm đánh dấu là giao diện Serializable, Cloneable và Remote. Mục đích của giao diện điểm đánh dấu là cung cấp thông tin loại thời gian chạy về một đối tượng cho JVM và Trình biên dịch. Chúng chủ yếu được sử dụng trong phát triển API và trong các framework như Spring để cung cấp thông tin bổ sung cho lớp.
 
-    Some of the commonly used built-in marker interfaces are:
+    Một số giao diện đánh dấu tích hợp thường được sử dụng là:
 
-    1. **Cloneable:** It is available in `java.lang` package. If we try to clone an object that doesn’t implement this marker interface, the JVM throws a `CloneNotSupportedException`. i.e, This marker interface is used as a signal/indicator to the JVM that it is legal to call the `Object.clone()` method.
-    2. **Serializable:** It is available in `java.io` package. When we try to write an object to output stream using `ObjectOutputStream.writeObject()` method without implementing this marker interface, JVM throws an exception named `NotSerializableException`.
-    3. **Remote:** It is available in `java.rmi` package. A remote object can be accessed from another machine if and only if the class has implemented this marker interface. Otherwise, it is going to throw exception named `RemoteException`.
+    1. **Có thể nhân bản:** Nó có sẵn ở `java.lang` bưu kiện. Nếu chúng ta cố gắng sao chép một đối tượng không triển khai giao diện điểm đánh dấu này, JVM sẽ đưa ra một `CloneNotSupportedException`. tức là, Giao diện điểm đánh dấu này được sử dụng làm tín hiệu/chỉ báo cho JVM rằng việc gọi `Object.clone()` phương pháp.
+    2. **Có thể tuần tự hóa:** Nó có sẵn ở `java.io` bưu kiện. Khi chúng tôi cố gắng ghi một đối tượng vào luồng đầu ra bằng cách sử dụng `ObjectOutputStream.writeObject()` phương thức mà không triển khai giao diện điểm đánh dấu này, JVM sẽ đưa ra một ngoại lệ có tên `NotSerializableException`.
+    3. **Điều khiển từ xa:** Nó có sẵn ở `java.rmi` bưu kiện. Một đối tượng từ xa có thể được truy cập từ một máy khác khi và chỉ khi lớp đó đã triển khai giao diện đánh dấu này. Nếu không, nó sẽ ném ngoại lệ có tên `RemoteException`.
 
-    For example, the cloneable marker interface looks like below,
+    Ví dụ: giao diện điểm đánh dấu có thể nhân bản trông như bên dưới,
 
     ```java
     public interface Cloneable {
@@ -500,7 +500,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    and the following student class implements Cloneable interface to make a copy of student's object.
+    và lớp sinh viên sau đây triển khai giao diện Cloneable để tạo một bản sao đối tượng của sinh viên.
 
     ```java
     import java.lang.*;
@@ -534,50 +534,50 @@ Frequently asked Java Interview questions
 
     ```
 
-    There are also alternatives for marker interfaces.
+    Ngoài ra còn có các lựa chọn thay thế cho giao diện điểm đánh dấu.
 
-    1. **Internal flags:** They can be used in place of marker interface to indicate any specific operation.
-    2. **Annotations:** They are used as tags to represent the metadata attached to classes, interfaces, or methods to indicate additional information required by JVM.
+    1. **Cờ nội bộ:** Chúng có thể được sử dụng thay cho giao diện điểm đánh dấu để biểu thị bất kỳ hoạt động cụ thể nào.
+    2. **Chú thích:** Chúng được sử dụng làm thẻ để thể hiện siêu dữ liệu được đính kèm với các lớp, giao diện hoặc phương thức nhằm biểu thị thông tin bổ sung mà JVM yêu cầu.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-15. ### What are collections in Java?
+15. ### Bộ sưu tập trong Java là gì?
 
-    Collections in Java is a unified framework that provides architecture for storing and manipulating a group of objects.
+    Bộ sưu tập trong Java là một khung hợp nhất cung cấp kiến ​​trúc để lưu trữ và thao tác một nhóm đối tượng.
 
-    The `java.util.*` package contains the following classes and interfaces for Collections framework.
+    các `java.util.*` gói chứa các lớp và giao diện sau cho khung Bộ sưu tập.
 
     ![Screenshot](images/CollectionsHierarchy.png)
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-16. ### What are the differences between arraylist and vector?
+16. ### Sự khác biệt giữa danh sách mảng và vectơ là gì?
 
-    Both Vector and ArrayList use dynamically resizable array as their internal data structure and implement the List interface. But there are couple of differences between them as listed below,
+    Cả Vector và ArrayList đều sử dụng mảng có thể thay đổi kích thước linh hoạt làm cấu trúc dữ liệu nội bộ của chúng và triển khai giao diện Danh sách. Nhưng có một số khác biệt giữa chúng như được liệt kê dưới đây,
 
-    | ArrayList                                                                                     | Vector                                                                                      |
+    | Danh sách mảng | Vectơ |
     | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-    | This data structure is part of Collection framework, introduced in JDK 1.2                    | This is a legacy class                                                                      |
-    | The capacity increment of ArrayList is 50% if the number of elements exceeds the current size | The capacity increment of Vector is 100% if the number of elements exceeds the current size |
-    | It is not synchronized by default. That means multiple threads can access it concurrently.    | It is synchronized by default. That means only one thread can access it at a time.          |
-    | It is quite fast because it is not synchronized                                               | It is quite slow due to synchronization                                                     |
-    | ArrayList uses the Iterator interface to traverse over the elements.                          | Vector uses both the Iterator and Enumeration interfaces to traverse over the elements.     |
+    | Cấu trúc dữ liệu này là một phần của khung Bộ sưu tập, được giới thiệu trong JDK 1.2 | Đây là lớp kế thừa |
+    | Mức tăng công suất của ArrayList là 50% nếu số phần tử vượt quá kích thước hiện tại | Mức tăng công suất của Vector là 100% nếu số phần tử vượt quá kích thước hiện tại |
+    | Nó không được đồng bộ hóa theo mặc định. Điều đó có nghĩa là nhiều luồng có thể truy cập đồng thời.    | Nó được đồng bộ hóa theo mặc định. Điều đó có nghĩa là mỗi lần chỉ có một luồng có thể truy cập nó.          |
+    | Nó khá nhanh vì không được đồng bộ hóa | Nó khá chậm do đồng bộ hóa |
+    | ArrayList sử dụng giao diện Iterator để duyệt qua các phần tử.                          | Vector sử dụng cả giao diện Iterator và Enumeration để duyệt qua các phần tử.     |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-17. ### What is finalize method? How do you override it?
+17. ### Phương thức hoàn thiện là gì? Làm thế nào để bạn ghi đè nó?
 
-    The `finalize()` is a method from the Object class used to perform cleanup activity before destroying any object. The method is invoked by garbage collector for cleanup activities like closing the resources associated with an object(database connection or network connection). This process is known as **finalization** and it helps JVM for in-memory optimization.
+    các `finalize()` là một phương thức từ lớp Object được sử dụng để thực hiện hoạt động dọn dẹp trước khi hủy bất kỳ đối tượng nào. Phương thức này được trình thu thập rác gọi ra cho các hoạt động dọn dẹp như đóng các tài nguyên được liên kết với một đối tượng (kết nối cơ sở dữ liệu hoặc kết nối mạng). Quá trình này được gọi là **hoàn thiện** và nó giúp JVM tối ưu hóa trong bộ nhớ.
 
-    It is a protected method of Object class with syntax as shown below,
+    Nó là một phương thức protected của lớp Object với cú pháp như sau:
 
     ```java
     protected void finalize() throws Throwable{}
     ```
 
-    Since Object is the superclass of all java classes, the finalize method is available for every java class. That's why garbage collector can call the `finalize()` method on any java object.
+    Vì Object là siêu lớp của tất cả các lớp java nên phương thức hoàn thiện có sẵn cho mọi lớp java. Đó là lý do tại sao người thu gom rác có thể gọi `finalize()` phương thức trên bất kỳ đối tượng java nào.
 
-    This method has empty implementation inside Object class. If your class has clean-up activities, you need to override this method. The following example demonstrate how to override the finalize method and call the method explicitly.
+    Phương thức này có phần triển khai trống bên trong lớp Object. Nếu lớp của bạn có hoạt động dọn dẹp, bạn cần ghi đè phương thức này. Ví dụ sau đây minh họa cách ghi đè phương thức hoàn thiện và gọi phương thức này một cách rõ ràng.
 
     ```java
     import java.lang.*;
@@ -608,21 +608,21 @@ Frequently asked Java Interview questions
     }
     ```
 
-    The statement `super.finalize()` is called inside finally block to ensure its execution even in the case of exceptions.
+    Tuyên bố `super.finalize()` được gọi bên trong khối cuối cùng để đảm bảo việc thực thi nó ngay cả trong trường hợp ngoại lệ.
 
-    **Note:** The garbage collector invokes the `finalize()` method only once on any object.
+    **Lưu ý:** Trình thu gom rác gọi `finalize()` phương thức chỉ một lần trên bất kỳ đối tượng nào.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-18. ### What Is the Difference Between the Comparable and Comparator Interfaces
+18. ### Sự khác biệt giữa giao diện so sánh và giao diện so sánh là gì
 
-    Java provides Comparable and Comparator interfaces for sorting the collection of objects, but they serve different purposes and are used in different scenarios. 
+    Java cung cấp các giao diện Comparable và Comparator để sắp xếp tập hợp các đối tượng, nhưng chúng phục vụ các mục đích khác nhau và được sử dụng trong các tình huống khác nhau. 
 
-    **Comparable:**
-    The Comparable interface is capable of comparing an object with another object of same type. The class which needs to compare its instances has to implement `java.lang.Comparable` interface.
-    It can be used to provide **single way of sorting**. That means that the objects can be sorted based on a single data member. For example, Employee object can be sorted based on single attributes like id, name, age etc.
+    **Có thể so sánh:**
+    Giao diện Comparable có khả năng so sánh một đối tượng với một đối tượng khác cùng loại. Lớp cần so sánh các thể hiện của nó phải thực hiện `java.lang.Comparable` giao diện.
+    Nó có thể được sử dụng để cung cấp **cách sắp xếp duy nhất**. Điều đó có nghĩa là các đối tượng có thể được sắp xếp dựa trên một thành viên dữ liệu duy nhất. Ví dụ: đối tượng Nhân viên có thể được sắp xếp dựa trên các thuộc tính đơn lẻ như id, tên, tuổi, v.v.
 
-    If the class implements Comparable interface, it knows how to sort the objects because the same class itself has implemented compareTo method. This type of sorting is called **default or natural sorting**. The class can compare its object by overriding compareTo method with syntax as shown below,
+    Nếu lớp triển khai giao diện Comparable, nó sẽ biết cách sắp xếp các đối tượng vì chính lớp đó đã triển khai phương thức so sánh. Kiểu sắp xếp này được gọi là **sắp xếp mặc định hoặc tự nhiên**. Lớp có thể so sánh đối tượng của nó bằng cách ghi đè phương thức so sánh với cú pháp như dưới đây:
 
     ```java
     class T implements Comparable<T> {
@@ -633,7 +633,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    For example, group of employees sorted based on their name attribute using Comparable interfaces as follows
+    Ví dụ: nhóm nhân viên được sắp xếp dựa trên thuộc tính tên của họ bằng giao diện Comparable như sau
 
     ```java
     import java.util.*;
@@ -682,11 +682,11 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Comparator:**
+    **Bộ so sánh:**
 
-    The comparator is a functional interface used to sort objects and it provides **multiple sorting sequence** in which objects sorted based on multiple data members. This interface is available as part of `java.util` package.  For example, Employee object can be sorted based on multiple attributes like id, name, age etc.
+    Bộ so sánh là một giao diện chức năng được sử dụng để sắp xếp các đối tượng và nó cung cấp **nhiều chuỗi sắp xếp** trong đó các đối tượng được sắp xếp dựa trên nhiều thành viên dữ liệu. Giao diện này có sẵn như là một phần của `java.util` bưu kiện.  Ví dụ: đối tượng Nhân viên có thể được sắp xếp dựa trên nhiều thuộc tính như id, tên, tuổi, v.v.
 
-    The comparator is used for custom ordering where the class is not aware about the sorting logic. The comparator can be created using a lambda expression that accept two objects of given type and return an integer value(i.e, 1, 0, -1) based on ordering with syntax as shown below,
+    Bộ so sánh được sử dụng để sắp xếp thứ tự tùy chỉnh khi lớp không biết về logic sắp xếp. Bộ so sánh có thể được tạo bằng cách sử dụng biểu thức lambda chấp nhận hai đối tượng cùng loại và trả về một giá trị số nguyên (tức là 1, 0, -1) dựa trên thứ tự với cú pháp như hiển thị bên dưới,
 
     ```java
      Comparator<T> comparator = (T t1, T t2) -> { 
@@ -694,7 +694,7 @@ Frequently asked Java Interview questions
      }
     ```
 
-    You can create multiple separate classes (which implement Comparator interface) to compare by different members.The Comparator provides the compare() method which can be overridden to customize the comparison logic. For example, group of employees sorted based on id and age data members even though Employee class overridden the compareTo method.
+    Bạn có thể tạo nhiều lớp riêng biệt (thực hiện giao diện Comparator) để so sánh giữa các thành viên khác nhau. Comparator cung cấp phương thức so sánh () có thể được ghi đè để tùy chỉnh logic so sánh. Ví dụ: nhóm nhân viên được sắp xếp dựa trên dữ liệu id và tuổi của các thành viên mặc dù lớp Nhân viên đã ghi đè phương thức so sánh.
 
     ```java
     public static void sortById(List<Employee> employees) {
@@ -714,18 +714,18 @@ Frequently asked Java Interview questions
     }
     ```
 
-    In the above example, idComparator and ageComparator have been created to perform custom sorting. These comparators needs to be passed as an argument to sort method.
+    Trong ví dụ trên, idComparator và ageComparator đã được tạo để thực hiện sắp xếp tùy chỉnh. Những bộ so sánh này cần được chuyển làm đối số cho phương thức sắp xếp.
     
-    **Note:** It is preferred to use lambda expression to create Comparator because it is a functional interface(exactly one abstract method).
+    **Lưu ý:** Nên sử dụng biểu thức lambda để tạo Bộ so sánh vì đây là một giao diện chức năng (chính xác là một phương thức trừu tượng).
 
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-19. ### What Is an inner class
+19. ### Lớp bên trong là gì
 
-   An inner class is a class that is defined within another class. Inner classes are used to logically group classes that are only used in one place, increase encapsulation, and make code more readable and maintainable. Java supports four types of inner classes:
+   Lớp bên trong là lớp được định nghĩa bên trong một lớp khác. Các lớp bên trong được sử dụng để nhóm các lớp một cách hợp lý chỉ được sử dụng ở một nơi, tăng khả năng đóng gói và làm cho mã dễ đọc và dễ bảo trì hơn. Java hỗ trợ bốn loại lớp bên trong:
 
-   1. **Member Inner Class (Non-static nested class):** A class defined inside another class without the static modifier. It has access to all members of the outer class, including private members.
+   1. **Lớp bên trong thành viên (Lớp lồng nhau không tĩnh):** Một lớp được xác định bên trong một lớp khác mà không có công cụ sửa đổi tĩnh. Nó có quyền truy cập vào tất cả các thành viên của lớp bên ngoài, bao gồm cả các thành viên riêng tư.
 
    ```java
    class Outer {
@@ -745,7 +745,7 @@ Frequently asked Java Interview questions
    }
    ```
 
-   2. **Static Nested Class:** A static class defined inside another class. It can only access static members of the outer class.
+   2. **Lớp lồng nhau tĩnh:** Một lớp tĩnh được xác định bên trong một lớp khác. Nó chỉ có thể truy cập các thành viên tĩnh của lớp bên ngoài.
 
    ```java
    class Outer {
@@ -764,7 +764,7 @@ Frequently asked Java Interview questions
    }
    ```
 
-   3. **Local Inner Class:** A class defined within a method. It can access local variables that are final or effectively final.
+   3. **Lớp bên trong cục bộ:** Một lớp được xác định trong một phương thức. Nó có thể truy cập các biến cục bộ là cuối cùng hoặc cuối cùng một cách hiệu quả.
 
    ```java
    class Outer {
@@ -783,7 +783,7 @@ Frequently asked Java Interview questions
    }
    ```
 
-   4. **Anonymous Inner Class:** A class without a name, used to instantiate objects with certain extras such as overriding methods.
+   4. **Lớp bên trong ẩn danh:** Một lớp không có tên, được dùng để khởi tạo các đối tượng bằng một số tính năng bổ sung nhất định, chẳng hạn như các phương thức ghi đè.
 
    ```java
    abstract class Animal {
@@ -802,24 +802,24 @@ Frequently asked Java Interview questions
    }
    ```
 
-   **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-20. ### What is the difference between final, finally, and finalize() in Java?
+20. ### Sự khác biệt giữa cuối cùng, cuối cùng và hoàn thiện() trong Java là gì?
 
-   The terms `final`, `finally`, and `finalize()` in Java look similar but serve completely different purposes.
+   Các điều khoản `final`, `finally`, Và `finalize()` trong Java trông giống nhau nhưng phục vụ các mục đích hoàn toàn khác nhau.
 
-   1. **final** → It is a **modifier** used for variables, methods, and classes.  
-      - A `final` variable cannot be reassigned once initialized.  
-      - A `final` method cannot be overridden in subclasses.  
-      - A `final` class cannot be extended.  
+   1. **cuối cùng** → Nó là **công cụ sửa đổi** được sử dụng cho các biến, phương thức và lớp.  
+      - MỘT `final` biến không thể được gán lại sau khi khởi tạo.  
+      - MỘT `final` phương thức không thể bị ghi đè trong các lớp con.  
+      - MỘT `final` lớp học không thể được mở rộng.  
 
-   2. **finally** → It is a **block** used in **exception handling** to execute important code such as closing files, releasing connections, etc.  
-      - The `finally` block executes **regardless** of whether an exception occurs or not.  
+   2. **cuối cùng** → Đó là một **khối** được sử dụng trong **xử lý ngoại lệ** để thực thi mã quan trọng như đóng tệp, giải phóng kết nối, v.v.  
+      - các `finally` khối thực thi **bất kể** có xảy ra ngoại lệ hay không.  
 
-   3. **finalize()** → It is a **method** defined in the `Object` class that the **Garbage Collector** calls before destroying an object.  
-      - It is rarely used now because garbage collection timing is unpredictable.
+   3. **finalize()** → Đó là một **phương thức** được định nghĩa trong `Object` lớp mà **Garbage Collector** gọi trước khi hủy một đối tượng.  
+      - Hiện nay nó hiếm khi được sử dụng vì thời gian thu gom rác không thể đoán trước được.
 
-   **Example:**
+   **Ví dụ:**
 
    ```java
    public class FinalExample {
@@ -844,15 +844,15 @@ Frequently asked Java Interview questions
    }
    ```
 
-   **[⬆ Back to Top](#table-of-contents)**
+   **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-21. ### What is the difference between '==' and equals() method?
+21. ### Sự khác biệt giữa phương thức '==' và bằng() là gì?
     
-    Both **==** and **.equals()** methods are used to compare objects, but they work in different ways:
+    Cả hai phương thức **==** và **.equals()** đều được sử dụng để so sánh các đối tượng, nhưng chúng hoạt động theo những cách khác nhau:
 
-    1. **== (Reference comparison):** The `==` operator compares the memory addresses (references) of two objects. It returns `true` if both references point to the same object in memory.
+    1. **== (So sánh tham khảo):** `==` toán tử so sánh địa chỉ bộ nhớ (tham chiếu) của hai đối tượng. Nó trở lại `true` nếu cả hai tham chiếu đều trỏ đến cùng một đối tượng trong bộ nhớ.
 
-    2. **.equals() (Content comparison):** The `.equals()` method compares the actual content or values of two objects. By default, it behaves like `==`, but it can be overridden to provide custom comparison logic.
+    2. **.equals() (So sánh nội dung):** `.equals()` phương thức so sánh nội dung hoặc giá trị thực tế của hai đối tượng. Theo mặc định, nó hoạt động như `==`, nhưng nó có thể được ghi đè để cung cấp logic so sánh tùy chỉnh.
 
     ```java
     public class ComparisonExample {
@@ -872,21 +872,21 @@ Frequently asked Java Interview questions
     }
     ```
 
-    | == Operator | equals() Method |
+    | == Toán tử | Phương thức bằng() |
     |-------------|-----------------|
-    | Compares object references | Compares object content |
-    | Cannot be overridden | Can be overridden |
-    | Works with primitives and objects | Works only with objects |
-    | Returns true if same memory location | Returns true if content is same |
+    | So sánh các tham chiếu đối tượng | So sánh nội dung đối tượng |
+    | Không thể ghi đè | Có thể bị ghi đè |
+    | Hoạt động với các đối tượng và nguyên thủy | Chỉ hoạt động với các đối tượng |
+    | Trả về true nếu cùng một vị trí bộ nhớ | Trả về true nếu nội dung giống nhau |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-22. ### What is method overloading and method overriding?
+22. ### Nạp chồng phương thức và ghi đè phương thức là gì?
 
-    Method overloading and method overriding are two important concepts in Java that enable polymorphism.
+    Nạp chồng phương thức và ghi đè phương thức là hai khái niệm quan trọng trong Java cho phép đa hình.
 
-    **Method Overloading (Compile-time Polymorphism):**
-    Method overloading occurs when multiple methods in the same class have the same name but different parameters (different number, type, or order of parameters). The return type can be the same or different.
+    ** Nạp chồng phương thức (Đa hình thời gian biên dịch):**
+    Quá tải phương thức xảy ra khi nhiều phương thức trong cùng một lớp có cùng tên nhưng khác tham số (số lượng, loại hoặc thứ tự tham số khác nhau). Kiểu trả về có thể giống hoặc khác nhau.
 
     ```java
     class Calculator {
@@ -907,8 +907,8 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Method Overriding (Runtime Polymorphism):**
-    Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its parent class. The method must have the same name, return type, and parameters.
+    **Ghi đè phương thức (Đa hình thời gian chạy):**
+    Ghi đè phương thức xảy ra khi một lớp con cung cấp cách triển khai cụ thể của một phương thức đã được xác định trong lớp cha của nó. Phương thức phải có cùng tên, kiểu trả về và tham số.
 
     ```java
     class Animal {
@@ -932,29 +932,29 @@ Frequently asked Java Interview questions
     }
     ```
 
-    | Method Overloading | Method Overriding |
+    | Quá tải phương thức | Ghi đè phương thức |
     |--------------------|-------------------|
-    | Same method name, different parameters | Same method name, same parameters |
-    | Occurs within the same class | Occurs between parent and child class |
-    | Compile-time polymorphism | Runtime polymorphism |
-    | Return type can be different | Return type must be same or covariant |
-    | Access modifier can be any | Cannot reduce access modifier |
+    | Tên phương thức giống nhau, tham số khác nhau | Cùng tên phương thức, cùng tham số |
+    | Xảy ra trong cùng một lớp | Xảy ra giữa lớp cha và lớp con |
+    | Đa hình thời gian biên dịch | Đa hình thời gian chạy |
+    | Kiểu trả về có thể khác | Kiểu trả về phải giống nhau hoặc hiệp biến |
+    | Công cụ sửa đổi quyền truy cập có thể là bất kỳ | Không thể giảm công cụ sửa đổi quyền truy cập |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-23. ### What is the difference between HashMap and Hashtable?
+23. ### Sự khác biệt giữa HashMap và Hashtable là gì?
 
-    Both HashMap and Hashtable are used to store key-value pairs in Java, but they have several important differences:
+    Cả HashMap và Hashtable đều được sử dụng để lưu trữ các cặp khóa-giá trị trong Java, nhưng chúng có một số điểm khác biệt quan trọng:
 
-    | HashMap | Hashtable |
+    | HashMap | Bảng băm |
     |---------|-----------|
-    | Not synchronized (not thread-safe) | Synchronized (thread-safe) |
-    | Allows one null key and multiple null values | Does not allow null keys or values |
-    | Introduced in Java 1.2 | Legacy class from Java 1.0 |
-    | Faster due to no synchronization | Slower due to synchronization overhead |
-    | Iterator is fail-fast | Enumerator is not fail-fast |
-    | Extends AbstractMap class | Extends Dictionary class |
-    | Preferred for single-threaded applications | Can be used in multi-threaded applications |
+    | Không được đồng bộ hóa (không an toàn cho luồng) | Đã đồng bộ hóa (an toàn theo luồng) |
+    | Cho phép một khóa null và nhiều giá trị null | Không cho phép khóa hoặc giá trị null |
+    | Được giới thiệu trong Java 1.2 | Lớp kế thừa từ Java 1.0 |
+    | Nhanh hơn do không đồng bộ hóa | Chậm hơn do chi phí đồng bộ hóa |
+    | Iterator bị lỗi nhanh | Điều tra viên không nhanh chóng thất bại |
+    | Mở rộng lớp Bản đồ trừu tượng | Mở rộng lớp Từ điển |
+    | Được ưu tiên cho các ứng dụng đơn luồng | Có thể được sử dụng trong các ứng dụng đa luồng |
 
     ```java
     import java.util.*;
@@ -976,22 +976,22 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Note:** For thread-safe operations, prefer `ConcurrentHashMap` over `Hashtable` as it provides better performance through segment-level locking.
+    **Lưu ý:** Đối với các hoạt động an toàn theo luồng, hãy ưu tiên `ConcurrentHashMap` qua `Hashtable` vì nó cung cấp hiệu suất tốt hơn thông qua khóa cấp phân khúc.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-24. ### What is the difference between ArrayList and LinkedList?
+24. ### Sự khác biệt giữa ArrayList và LinkedList là gì?
 
-    Both ArrayList and LinkedList implement the List interface but differ in their internal implementation and performance characteristics.
+    Cả ArrayList và LinkedList đều triển khai giao diện Danh sách nhưng khác nhau về đặc tính hiệu suất và triển khai nội bộ của chúng.
 
-    | ArrayList | LinkedList |
+    | Danh sách mảng | Danh sách liên kết |
     |-----------|------------|
-    | Uses dynamic array internally | Uses doubly linked list internally |
-    | Better for storing and accessing data (O(1) for get) | Better for manipulating data (O(1) for add/remove at ends) |
-    | Slower manipulation as shifting is required | Faster manipulation, no shifting needed |
-    | Implements only List interface | Implements List and Deque interfaces |
-    | More memory efficient | More memory overhead (stores prev/next references) |
-    | Good for random access | Good for sequential access |
+    | Sử dụng mảng động trong nội bộ | Sử dụng danh sách liên kết đôi trong nội bộ |
+    | Tốt hơn cho việc lưu trữ và truy cập dữ liệu (O(1) cho get) | Tốt hơn cho việc thao tác dữ liệu (O(1) để thêm/xóa ở cuối) |
+    | Thao tác chậm hơn khi cần chuyển số | Thao tác nhanh hơn, không cần dịch chuyển |
+    | Chỉ triển khai giao diện Danh sách | Triển khai giao diện List và Deque |
+    | Hiệu quả bộ nhớ hơn | Thêm chi phí bộ nhớ (lưu trữ các tài liệu tham khảo trước/tiếp theo) |
+    | Tốt cho truy cập ngẫu nhiên | Tốt cho truy cập tuần tự |
 
     ```java
     import java.util.*;
@@ -1013,22 +1013,22 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **When to use:**
-    - Use **ArrayList** when you need frequent access to elements by index
-    - Use **LinkedList** when you need frequent insertions/deletions, especially at the beginning or middle of the list
+    **Khi nào nên sử dụng:**
+    - Sử dụng **ArrayList** khi bạn cần truy cập thường xuyên vào các phần tử theo chỉ mục
+    - Sử dụng **Danh sách liên kết** khi bạn cần chèn/xóa thường xuyên, đặc biệt là ở đầu hoặc giữa danh sách
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-25. ### What is Java Reflection API?
+25. ### API phản chiếu Java là gì?
 
-    Java Reflection API is a powerful feature that allows programs to examine and modify the behavior of classes, interfaces, methods, and fields at runtime. It is part of the `java.lang.reflect` package.
+    Java Reflection API là một tính năng mạnh mẽ cho phép các chương trình kiểm tra và sửa đổi hành vi của các lớp, giao diện, phương thức và trường trong thời gian chạy. Nó là một phần của `java.lang.reflect` bưu kiện.
 
-    **Key capabilities of Reflection:**
-    1. Examine class properties at runtime
-    2. Create objects dynamically
-    3. Invoke methods at runtime
-    4. Access and modify private fields
-    5. Get information about constructors, methods, and fields
+    **Các khả năng chính của Reflection:**
+    1. Kiểm tra thuộc tính lớp khi chạy
+    2. Tạo đối tượng một cách linh hoạt
+    3. Gọi các phương thức trong thời gian chạy
+    4. Truy cập và sửa đổi các trường riêng tư
+    5. Nhận thông tin về hàm tạo, phương thức và trường
 
     ```java
     import java.lang.reflect.*;
@@ -1083,40 +1083,40 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Use cases:** Frameworks like Spring, Hibernate, JUnit use Reflection extensively for dependency injection, ORM mapping, and test execution.
+    **Các trường hợp sử dụng:** Các khung như Spring, Hibernate, JUnit sử dụng Reflection rộng rãi để chèn phần phụ thuộc, ánh xạ ORM và thực thi thử nghiệm.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-26. ### What are the different types of memory areas allocated by JVM?
+26. ### Các loại vùng nhớ khác nhau được JVM phân bổ là gì?
 
-    JVM allocates memory in different areas for efficient program execution. The main memory areas are:
+    JVM phân bổ bộ nhớ ở các vùng khác nhau để thực thi chương trình hiệu quả. Các vùng nhớ chính là:
 
-    1. **Method Area (Metaspace):**
-       - Stores class-level data like class structures, method data, and runtime constant pool
-       - Shared among all threads
-       - Created during JVM startup
+    1. **Vùng phương thức (Metaspace):**
+       - Lưu trữ dữ liệu cấp lớp như cấu trúc lớp, dữ liệu phương thức và nhóm hằng số thời gian chạy
+       - Được chia sẻ giữa tất cả các chủ đề
+       - Được tạo trong quá trình khởi động JVM
 
-    2. **Heap Area:**
-       - Stores all objects and their instance variables
-       - Shared among all threads
-       - Managed by Garbage Collector
-       - Divided into Young Generation (Eden, Survivor spaces) and Old Generation
+    2. **Diện tích vùng heap:**
+       - Lưu trữ tất cả các đối tượng và các biến thể hiện của chúng
+       - Được chia sẻ giữa tất cả các chủ đề
+       - Được quản lý bởi Garbage Collector
+       - Được chia thành Thế hệ trẻ (không gian Eden, Người sống sót) và Thế hệ cũ
 
-    3. **Stack Area:**
-       - Each thread has its own stack
-       - Stores local variables, method calls, and partial results
-       - Contains stack frames for each method invocation
-       - Memory is automatically allocated/deallocated
+    3. **Diện tích ngăn xếp:**
+       - Mỗi luồng có ngăn xếp riêng
+       - Lưu trữ các biến cục bộ, lệnh gọi phương thức và kết quả một phần
+       - Chứa các khung ngăn xếp cho mỗi lần gọi phương thức
+       - Bộ nhớ được tự động cấp phát/giải phóng
 
-    4. **PC (Program Counter) Registers:**
-       - Each thread has its own PC register
-       - Stores address of currently executing JVM instruction
-       - Updated after each instruction execution
+    4. **Thanh ghi PC (Bộ đếm chương trình):**
+       - Mỗi luồng có thanh ghi PC riêng
+       - Lưu trữ địa chỉ của lệnh JVM hiện đang thực thi
+       - Cập nhật sau mỗi lần thực hiện lệnh
 
-    5. **Native Method Stack:**
-       - Contains native method information
-       - Each thread has its own native method stack
-       - Used for methods written in languages other than Java (C, C++)
+    5. **Ngăn xếp phương thức gốc:**
+       - Chứa thông tin phương thức gốc
+       - Mỗi luồng có ngăn xếp phương thức gốc riêng
+       - Được sử dụng cho các phương thức được viết bằng các ngôn ngữ khác ngoài Java (C, C++)
 
     ```
     JVM Memory Structure:
@@ -1138,23 +1138,23 @@ Frequently asked Java Interview questions
     └─────────────────────────────────────────────┘
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-27. ### What is the difference between throw and throws?
+27. ### Sự khác biệt giữa ném và ném là gì?
 
-    Both `throw` and `throws` are used in exception handling but serve different purposes.
+    Cả hai `throw` Và `throws` được sử dụng trong xử lý ngoại lệ nhưng phục vụ các mục đích khác nhau.
 
-    **throw:**
-    - Used to explicitly throw an exception
-    - Used inside a method body
-    - Can throw only one exception at a time
-    - Followed by an exception instance
+    **ném:**
+    - Được sử dụng để ném một ngoại lệ một cách rõ ràng
+    - Được sử dụng bên trong thân phương thức
+    - Chỉ có thể ném một ngoại lệ tại một thời điểm
+    - Tiếp theo là một trường hợp ngoại lệ
 
-    **throws:**
-    - Used to declare exceptions that a method might throw
-    - Used in method signature
-    - Can declare multiple exceptions
-    - Followed by exception class names
+    **ném:**
+    - Được sử dụng để khai báo các ngoại lệ mà một phương thức có thể đưa ra
+    - Được sử dụng trong chữ ký phương thức
+    - Có thể khai báo nhiều ngoại lệ
+    - Tiếp theo là tên lớp ngoại lệ
 
     ```java
     import java.io.*;
@@ -1196,28 +1196,28 @@ Frequently asked Java Interview questions
     }
     ```
 
-    | throw | throws |
+    | ném | ném |
     |-------|--------|
-    | Used to throw an exception | Used to declare an exception |
-    | Inside method body | In method signature |
-    | Cannot throw multiple exceptions | Can declare multiple exceptions |
-    | Followed by instance | Followed by class name |
-    | Checked exceptions must be caught | Propagates exception to caller |
+    | Được sử dụng để ném một ngoại lệ | Dùng để khai báo một ngoại lệ |
+    | Nội dung phương thức bên trong | Trong chữ ký phương thức |
+    | Không thể ném nhiều ngoại lệ | Có thể khai báo nhiều ngoại lệ |
+    | Tiếp theo là ví dụ | Tiếp theo là tên lớp |
+    | Các trường hợp ngoại lệ đã được kiểm tra phải được phát hiện | Tuyên truyền ngoại lệ cho người gọi |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-28. ### What is a singleton class and how to create one?
+28. ### Lớp singleton là gì và cách tạo một lớp như thế nào?
 
-    A Singleton class is a design pattern that ensures only one instance of a class is created throughout the application lifecycle. It provides a global point of access to that instance.
+    Lớp Singleton là mẫu thiết kế đảm bảo chỉ có một phiên bản của lớp được tạo trong suốt vòng đời của ứng dụng. Nó cung cấp một điểm truy cập toàn cầu vào trường hợp đó.
 
-    **Key characteristics:**
-    - Private constructor to prevent direct instantiation
-    - Static method to get the single instance
-    - Static variable to hold the single instance
+    **Đặc điểm chính:**
+    - Nhà xây dựng riêng để ngăn chặn việc khởi tạo trực tiếp
+    - Phương thức tĩnh để lấy phiên bản duy nhất
+    - Biến tĩnh để giữ phiên bản đơn
 
-    **Different ways to create Singleton:**
+    **Các cách khác nhau để tạo Singleton:**
 
-    1. **Eager Initialization:**
+    1. **Khởi tạo háo hức:**
     ```java
     public class EagerSingleton {
         private static final EagerSingleton instance = new EagerSingleton();
@@ -1230,7 +1230,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    2. **Lazy Initialization:**
+    2. **Khởi tạo lười biếng:**
     ```java
     public class LazySingleton {
         private static LazySingleton instance;
@@ -1246,7 +1246,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    3. **Thread-Safe Singleton (Double-Checked Locking):**
+    3. **Singleton an toàn theo luồng (Khóa kiểm tra hai lần):**
     ```java
     public class ThreadSafeSingleton {
         private static volatile ThreadSafeSingleton instance;
@@ -1266,7 +1266,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    4. **Bill Pugh Singleton (Best Practice):**
+    4. **Bill Pugh Singleton (Phương pháp hay nhất):**
     ```java
     public class BillPughSingleton {
         private BillPughSingleton() {}
@@ -1281,19 +1281,19 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-29. ### What are Java 8 Stream API features?
+29. ### Tính năng API luồng Java 8 là gì?
 
-    Java 8 Stream API provides a functional approach to process collections of objects. Streams support sequential and parallel operations on data.
+    API luồng Java 8 cung cấp một cách tiếp cận chức năng để xử lý các bộ sưu tập đối tượng. Các luồng hỗ trợ các hoạt động tuần tự và song song trên dữ liệu.
 
-    **Key Features:**
-    1. **Lazy Evaluation:** Intermediate operations are not executed until a terminal operation is invoked
-    2. **Pipelining:** Operations can be chained together
-    3. **Internal Iteration:** Stream handles iteration internally
-    4. **Parallel Processing:** Easy parallel execution with `parallelStream()`
+    **Các tính năng chính:**
+    1. **Đánh giá lười biếng:** Các thao tác trung gian không được thực thi cho đến khi thao tác đầu cuối được gọi
+    2. **Đường ống:** Các hoạt động có thể được xâu chuỗi lại với nhau
+    3. **Lặp lại nội bộ:** Luồng xử lý việc lặp lại nội bộ
+    4. **Xử lý song song:** Thực hiện song song dễ dàng với `parallelStream()`
 
-    **Common Stream Operations:**
+    **Hoạt động truyền phát chung:**
 
     ```java
     import java.util.*;
@@ -1354,17 +1354,17 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-30. ### What is the difference between fail-fast and fail-safe iterators?
+30. ### Sự khác biệt giữa vòng lặp không nhanh và vòng lặp không an toàn là gì?
 
-    Iterators in Java can be categorized as fail-fast or fail-safe based on their behavior when the underlying collection is modified during iteration.
+    Các trình vòng lặp trong Java có thể được phân loại là không nhanh hoặc không an toàn dựa trên hành vi của chúng khi bộ sưu tập cơ bản được sửa đổi trong quá trình lặp.
 
-    **Fail-Fast Iterator:**
-    - Throws `ConcurrentModificationException` if the collection is modified during iteration
-    - Works on the original collection
-    - Examples: ArrayList, HashMap, HashSet iterators
-    - Uses `modCount` to detect modifications
+    **Trình lặp nhanh không thành công:**
+    - Ném `ConcurrentModificationException` nếu bộ sưu tập được sửa đổi trong quá trình lặp
+    - Hoạt động trên bộ sưu tập gốc
+    - Ví dụ: các trình vòng lặp ArrayList, HashMap, HashSet
+    - Công dụng `modCount` để phát hiện sửa đổi
 
     ```java
     import java.util.*;
@@ -1387,11 +1387,11 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Fail-Safe Iterator:**
-    - Does not throw exception if collection is modified during iteration
-    - Works on a clone/copy of the collection
-    - Examples: CopyOnWriteArrayList, ConcurrentHashMap iterators
-    - More memory overhead due to copying
+    **Trình lặp không an toàn:**
+    - Không ném ngoại lệ nếu bộ sưu tập được sửa đổi trong quá trình lặp
+    - Hoạt động trên một bản sao/bản sao của bộ sưu tập
+    - Ví dụ: các trình vòng lặp CopyOnWriteArrayList, ConcurrentHashMap
+    - Thêm chi phí bộ nhớ do sao chép
 
     ```java
     import java.util.concurrent.*;
@@ -1416,32 +1416,32 @@ Frequently asked Java Interview questions
     }
     ```
 
-    | Fail-Fast | Fail-Safe |
+    | Thất bại nhanh | Không an toàn |
     |-----------|-----------|
-    | Throws ConcurrentModificationException | No exception thrown |
-    | Works on original collection | Works on copy of collection |
-    | Less memory overhead | More memory overhead |
+    | Ném ConcurrentModificationException | Không có ngoại lệ ném |
+    | Hoạt động trên bộ sưu tập gốc | Hoạt động trên bản sao của bộ sưu tập |
+    | Ít chi phí bộ nhớ hơn | Thêm chi phí bộ nhớ |
     | ArrayList, HashMap, HashSet | CopyOnWriteArrayList, ConcurrentHashMap |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-31. ### What is the difference between process and thread?
+31. ###Sự khác biệt giữa tiến trình và luồng là gì?
 
-    A process and a thread are both units of execution, but they differ significantly in their characteristics and usage.
+    Một tiến trình và một luồng đều là các đơn vị thực thi, nhưng chúng khác nhau đáng kể về đặc điểm và cách sử dụng.
 
-    **Process:**
-    - Independent executing program with its own memory space
-    - Contains at least one thread (main thread)
-    - Has its own address space, heap, stack, and system resources
-    - Processes are isolated from each other
-    - Inter-process communication (IPC) is expensive
+    **Quá trình:**
+    - Chương trình thực thi độc lập với không gian bộ nhớ riêng
+    - Chứa ít nhất một chủ đề (luồng chính)
+    - Có không gian địa chỉ, vùng heap, ngăn xếp và tài nguyên hệ thống riêng
+    - Các tiến trình được cách ly với nhau
+    - Giao tiếp giữa các quá trình (IPC) đắt tiền
 
-    **Thread:**
-    - Lightweight unit of execution within a process
-    - Shares memory space with other threads in the same process
-    - Has its own stack but shares heap with other threads
-    - Threads within a process can communicate directly
-    - Context switching between threads is faster
+    **Chủ đề:**
+    - Đơn vị thực thi nhẹ trong một quy trình
+    - Chia sẻ không gian bộ nhớ với các luồng khác trong cùng tiến trình
+    - Có ngăn xếp riêng nhưng chia sẻ đống với các luồng khác
+    - Các luồng trong một tiến trình có thể giao tiếp trực tiếp
+    - Chuyển đổi ngữ cảnh giữa các luồng nhanh hơn
 
     ```java
     public class ProcessVsThread {
@@ -1463,22 +1463,22 @@ Frequently asked Java Interview questions
     }
     ```
 
-    | Process | Thread |
+    | Quy trình | Chủ đề |
     |---------|--------|
-    | Heavy weight | Light weight |
-    | Own memory space | Shared memory space |
-    | Slower context switching | Faster context switching |
-    | Isolated from other processes | Can communicate with other threads |
-    | More resource intensive | Less resource intensive |
-    | Process crash doesn't affect others | Thread crash can affect entire process |
+    | Trọng lượng nặng | Trọng lượng nhẹ |
+    | Không gian bộ nhớ riêng | Không gian bộ nhớ dùng chung |
+    | Chuyển ngữ cảnh chậm hơn | Chuyển đổi ngữ cảnh nhanh hơn |
+    | Bị cô lập khỏi các quy trình khác | Có thể giao tiếp với các chủ đề khác |
+    | Cần nhiều tài nguyên hơn | Ít tốn tài nguyên hơn |
+    | Sự cố quy trình không ảnh hưởng đến người khác | Sự cố chủ đề có thể ảnh hưởng đến toàn bộ quá trình |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-32. ### What are the different ways to create a thread in Java?
+32. ### Có những cách nào khác nhau để tạo một luồng trong Java?
 
-    There are multiple ways to create a thread in Java:
+    Có nhiều cách để tạo một luồng trong Java:
 
-    **1. Extending Thread class:**
+    **1. Mở rộng lớp Thread:**
     ```java
     class MyThread extends Thread {
         @Override
@@ -1492,7 +1492,7 @@ Frequently asked Java Interview questions
     thread.start();
     ```
 
-    **2. Implementing Runnable interface:**
+    **2. Triển khai giao diện Runnable:**
     ```java
     class MyRunnable implements Runnable {
         @Override
@@ -1506,7 +1506,7 @@ Frequently asked Java Interview questions
     thread.start();
     ```
 
-    **3. Using Lambda expression (Java 8+):**
+    **3. Sử dụng biểu thức Lambda (Java 8+):**
     ```java
     Thread thread = new Thread(() -> {
         System.out.println("Lambda thread running");
@@ -1514,7 +1514,7 @@ Frequently asked Java Interview questions
     thread.start();
     ```
 
-    **4. Implementing Callable interface (returns result):**
+    **4. Triển khai giao diện Callable (trả về kết quả):**
     ```java
     import java.util.concurrent.*;
 
@@ -1532,7 +1532,7 @@ Frequently asked Java Interview questions
     executor.shutdown();
     ```
 
-    **5. Using ExecutorService:**
+    **5. Sử dụng ExecutorService:**
     ```java
     ExecutorService executor = Executors.newFixedThreadPool(5);
     
@@ -1547,21 +1547,21 @@ Frequently asked Java Interview questions
     executor.shutdown();
     ```
 
-    | Method | Returns Value | Can Extend Other Class | Exception Handling |
+    | Phương pháp | Trả về giá trị | Có Thể Mở Rộng Lớp Khác | Xử lý ngoại lệ |
     |--------|--------------|------------------------|-------------------|
-    | Thread class | No | No | Unchecked only |
-    | Runnable | No | Yes | Unchecked only |
-    | Callable | Yes | Yes | Checked and Unchecked |
+    | Lớp chủ đề | Không | Không | Chỉ bỏ chọn |
+    | Có thể chạy được | Không | Có | Chỉ bỏ chọn |
+    | Có thể gọi được | Có | Có | Đã kiểm tra và bỏ chọn |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-33. ### What is synchronization in Java?
+33. ### Đồng bộ hóa trong Java là gì?
 
-    Synchronization is a mechanism that ensures only one thread can access a shared resource at a time. It prevents race conditions and ensures thread safety.
+    Đồng bộ hóa là một cơ chế đảm bảo mỗi lần chỉ có một luồng có thể truy cập tài nguyên được chia sẻ. Nó ngăn ngừa tình trạng chạy đua và đảm bảo an toàn cho luồng.
 
-    **Types of Synchronization:**
+    **Các loại đồng bộ hóa:**
 
-    **1. Synchronized Method:**
+    **1. Phương pháp đồng bộ hóa:**
     ```java
     class Counter {
         private int count = 0;
@@ -1576,7 +1576,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **2. Synchronized Block:**
+    **2. Khối được đồng bộ hóa:**
     ```java
     class Counter {
         private int count = 0;
@@ -1590,7 +1590,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **3. Static Synchronization:**
+    **3. Đồng bộ hóa tĩnh:**
     ```java
     class StaticCounter {
         private static int count = 0;
@@ -1601,7 +1601,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Example demonstrating the need for synchronization:**
+    **Ví dụ minh họa nhu cầu đồng bộ hóa:**
     ```java
     class BankAccount {
         private int balance = 1000;
@@ -1626,19 +1626,19 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Key Points:**
-    - Every object in Java has an intrinsic lock (monitor)
-    - Only one thread can hold the lock at a time
-    - Synchronization can cause performance overhead
-    - Prefer synchronized blocks over synchronized methods for fine-grained control
+    **Những điểm chính:**
+    - Mọi đối tượng trong Java đều có khóa (màn hình) nội tại
+    - Mỗi lần chỉ có một luồng có thể giữ khóa
+    - Đồng bộ hóa có thể gây ra chi phí hiệu suất
+    - Ưu tiên các khối được đồng bộ hóa hơn các phương pháp được đồng bộ hóa để kiểm soát chi tiết hơn
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-34. ### What is deadlock and how to avoid it?
+34. ### Bế tắc là gì và làm thế nào để tránh nó?
 
-    A deadlock is a situation where two or more threads are blocked forever, each waiting for the other to release a lock.
+    Bế tắc là tình huống trong đó hai hoặc nhiều luồng bị chặn vĩnh viễn, mỗi luồng chờ luồng kia giải phóng khóa.
 
-    **Deadlock Example:**
+    **Ví dụ bế tắc:**
     ```java
     public class DeadlockExample {
         private static final Object lock1 = new Object();
@@ -1673,9 +1673,9 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **How to Avoid Deadlock:**
+    **Cách tránh bế tắc:**
 
-    **1. Lock Ordering - Always acquire locks in the same order:**
+    **1. Thứ tự khóa - Luôn lấy khóa theo cùng thứ tự:**
     ```java
     // Fixed version - both threads acquire locks in same order
     Thread thread1 = new Thread(() -> {
@@ -1695,7 +1695,7 @@ Frequently asked Java Interview questions
     });
     ```
 
-    **2. Use tryLock with timeout:**
+    **2. Sử dụng tryLock khi hết thời gian chờ:**
     ```java
     import java.util.concurrent.locks.*;
 
@@ -1720,20 +1720,20 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **3. Avoid nested locks**
-    **4. Use lock timeout**
-    **5. Avoid holding locks for long periods**
+    **3. Tránh các khóa lồng nhau**
+    **4. Sử dụng thời gian chờ khóa**
+    **5. Tránh giữ ổ khóa trong thời gian dài**
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-35. ### What is the volatile keyword in Java?
+35. ### Từ khóa dễ bay hơi trong Java là gì?
 
-    The `volatile` keyword in Java is used to indicate that a variable's value may be modified by different threads. It ensures visibility of changes across threads and prevents caching of the variable.
+    các `volatile` từ khóa trong Java được sử dụng để chỉ ra rằng giá trị của một biến có thể được sửa đổi bởi các luồng khác nhau. Nó đảm bảo khả năng hiển thị các thay đổi trên các luồng và ngăn biến lưu vào bộ nhớ đệm.
 
-    **Key Features:**
-    1. **Visibility:** Changes made by one thread are immediately visible to other threads
-    2. **Atomicity:** Read and write operations on volatile variables are atomic (for primitives)
-    3. **No Caching:** The variable is always read from main memory, not from CPU cache
+    **Các tính năng chính:**
+    1. **Chế độ hiển thị:** Những thay đổi được thực hiện bởi một luồng sẽ được hiển thị ngay lập tức đối với các luồng khác
+    2. **Tính nguyên tử:** Các thao tác đọc và ghi trên các biến dễ bay hơi là nguyên tử (đối với các biến nguyên thủy)
+    3. **Không có bộ nhớ đệm:** Biến luôn được đọc từ bộ nhớ chính, không phải từ bộ đệm CPU
 
     ```java
     public class VolatileExample {
@@ -1762,34 +1762,34 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Without volatile:**
+    **Không biến động:**
     ```java
     // Without volatile, the worker thread might never see the change
     // because it may read from its local cache
     private boolean running = true; // Thread may cache this value
     ```
 
-    **Volatile vs Synchronized:**
-    | volatile | synchronized |
+    **Dễ bay hơi và được đồng bộ hóa:**
+    | dễ bay hơi | đồng bộ |
     |----------|--------------|
-    | Only ensures visibility | Ensures visibility and atomicity |
-    | No blocking | Causes blocking |
-    | Cannot be used for compound operations | Can protect compound operations |
-    | Less overhead | More overhead |
+    | Chỉ đảm bảo khả năng hiển thị | Đảm bảo khả năng hiển thị và tính nguyên tử |
+    | Không chặn | Nguyên nhân chặn |
+    | Không thể sử dụng cho các phép toán phức hợp | Có thể bảo vệ hoạt động ghép |
+    | Ít chi phí hơn | Thêm chi phí |
 
-    **Note:** Volatile is not suitable for compound operations like `count++`. Use `AtomicInteger` or `synchronized` for such cases.
+    **Lưu ý:** Dễ bay hơi không phù hợp cho các hoạt động kết hợp như `count++`. Sử dụng `AtomicInteger` hoặc `synchronized` cho những trường hợp như vậy.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-36. ### What is the transient keyword in Java?
+36. ### Từ khóa tạm thời trong Java là gì?
 
-    The `transient` keyword in Java is used to indicate that a field should not be serialized when the object is converted to a byte stream.
+    các `transient` từ khóa trong Java được sử dụng để chỉ ra rằng một trường không nên được tuần tự hóa khi đối tượng được chuyển đổi thành luồng byte.
 
-    **Use Cases:**
-    - Sensitive data like passwords
-    - Calculated/derived fields
-    - Non-serializable fields
-    - Thread-local data
+    **Trường hợp sử dụng:**
+    - Dữ liệu nhạy cảm như mật khẩu
+    - Các trường được tính toán/dẫn xuất
+    - Các trường không thể tuần tự hóa
+    - Dữ liệu cục bộ
 
     ```java
     import java.io.*;
@@ -1841,22 +1841,22 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Key Points:**
-    - Transient fields get default values after deserialization (null for objects, 0 for numbers, false for boolean)
-    - Static fields are not serialized regardless of transient keyword
-    - Can be combined with custom readObject/writeObject for complex scenarios
+    **Những điểm chính:**
+    - Các trường tạm thời nhận giá trị mặc định sau khi khử lưu lượng (null cho đối tượng, 0 cho số, sai cho boolean)
+    - Các trường tĩnh không được tuần tự hóa bất kể từ khóa tạm thời
+    - Có thể kết hợp với readObject/writeObject tùy chỉnh cho các tình huống phức tạp
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-37. ### What is serialization and deserialization?
+37. ### Tuần tự hóa và giải tuần tự hóa là gì?
 
-    **Serialization** is the process of converting an object's state into a byte stream. **Deserialization** is the reverse process - converting a byte stream back into an object.
+    **Nối tiếp** là quá trình chuyển đổi trạng thái của đối tượng thành luồng byte. **Khử tuần tự** là quá trình ngược lại - chuyển đổi luồng byte trở lại thành một đối tượng.
 
-    **Why Serialization?**
-    - Persist object state to file/database
-    - Send objects over network
-    - Deep copy objects
-    - Cache objects
+    **Tại sao phải tuần tự hóa?**
+    - Duy trì trạng thái đối tượng vào tệp/cơ sở dữ liệu
+    - Gửi đối tượng qua mạng
+    - Đối tượng sao chép sâu
+    - Đối tượng bộ nhớ đệm
 
     ```java
     import java.io.*;
@@ -1905,7 +1905,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Custom Serialization:**
+    **Xê-ri tùy chỉnh:**
     ```java
     class CustomSerializable implements Serializable {
         private String data;
@@ -1929,19 +1929,19 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Important:** Always declare `serialVersionUID` to maintain compatibility during deserialization.
+    **Quan trọng:** Luôn khai báo `serialVersionUID` để duy trì khả năng tương thích trong quá trình khử lưu huỳnh.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-38. ### What are functional interfaces in Java?
+38. ### Giao diện chức năng trong Java là gì?
 
-    A functional interface is an interface that contains exactly one abstract method. They are the foundation for lambda expressions in Java 8.
+    Giao diện chức năng là giao diện chứa chính xác một phương thức trừu tượng. Chúng là nền tảng cho các biểu thức lambda trong Java 8.
 
-    **Key Characteristics:**
-    - Has exactly one abstract method
-    - Can have multiple default and static methods
-    - Can be annotated with `@FunctionalInterface`
-    - Used as target types for lambda expressions
+    **Đặc điểm chính:**
+    - Có chính xác một phương thức trừu tượng
+    - Có thể có nhiều phương thức mặc định và tĩnh
+    - Có thể chú thích bằng `@FunctionalInterface`
+    - Được sử dụng làm loại mục tiêu cho biểu thức lambda
 
     ```java
     @FunctionalInterface
@@ -1971,7 +1971,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Built-in Functional Interfaces (java.util.function):**
+    **Giao diện chức năng tích hợp (java.util.function):**
 
     ```java
     import java.util.function.*;
@@ -2009,19 +2009,19 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-39. ### What are lambda expressions in Java?
+39. ### Biểu thức lambda trong Java là gì?
 
-    Lambda expressions are anonymous functions that provide a concise way to implement functional interfaces. Introduced in Java 8, they enable functional programming in Java.
+    Biểu thức Lambda là các hàm ẩn danh cung cấp một cách ngắn gọn để triển khai các giao diện chức năng. Được giới thiệu trong Java 8, chúng cho phép lập trình hàm trong Java.
 
-    **Syntax:**
+    **Cú pháp:**
     ```
     (parameters) -> expression
     (parameters) -> { statements; }
     ```
 
-    **Examples:**
+    **Ví dụ:**
 
     ```java
     import java.util.*;
@@ -2080,7 +2080,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Method References:**
+    **Tham khảo phương pháp:**
     ```java
     // Static method reference
     Function<String, Integer> parseInt = Integer::parseInt;
@@ -2093,19 +2093,19 @@ Frequently asked Java Interview questions
     Supplier<ArrayList<String>> listSupplier = ArrayList::new;
     ```
 
-    **Benefits:**
-    - Concise and readable code
-    - Enables functional programming
-    - Better support for parallel processing
-    - Reduced boilerplate code
+    **Những lợi ích:**
+    - Mã ngắn gọn và dễ đọc
+    - Cho phép lập trình chức năng
+    - Hỗ trợ tốt hơn cho xử lý song song
+    - Giảm mã soạn sẵn
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-40. ### What is Optional class in Java 8?
+40. ### Lớp tùy chọn trong Java 8 là gì?
 
-    The `Optional` class is a container object that may or may not contain a non-null value. It helps avoid `NullPointerException` and makes null handling more explicit.
+    các `Optional` class là một đối tượng chứa có thể chứa hoặc không chứa giá trị khác null. Nó giúp tránh `NullPointerException` và làm cho việc xử lý null rõ ràng hơn.
 
-    **Creating Optional:**
+    **Tạo tùy chọn:**
     ```java
     import java.util.Optional;
 
@@ -2151,7 +2151,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Optional with Streams:**
+    **Tùy chọn với Luồng:**
     ```java
     public class OptionalStreams {
         public static void main(String[] args) {
@@ -2178,7 +2178,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Best Practices:**
+    **Các phương pháp hay nhất:**
     ```java
     class UserService {
         // Return Optional for methods that may not find a result
@@ -2197,23 +2197,23 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-41. ### What is the difference between Collection and Collections?
+41. ### Sự khác biệt giữa Bộ sưu tập và Bộ sưu tập là gì?
 
-    `Collection` and `Collections` are two different concepts in Java that are often confused.
+    `Collection` Và `Collections` là hai khái niệm khác nhau trong Java thường bị nhầm lẫn.
 
-    **Collection (Interface):**
-    - It is a root interface in the Java Collections Framework
-    - Located in `java.util` package
-    - Represents a group of objects known as elements
-    - Extended by List, Set, and Queue interfaces
+    **Bộ sưu tập (Giao diện):**
+    - Nó là một giao diện gốc trong Khung sưu tập Java
+    - Nằm ở `java.util` bưu kiện
+    - Đại diện cho một nhóm đối tượng được gọi là các phần tử
+    - Được mở rộng theo giao diện Danh sách, Bộ và Hàng đợi
 
-    **Collections (Utility Class):**
-    - It is a utility class that provides static methods for collection operations
-    - Located in `java.util` package
-    - Contains methods for sorting, searching, shuffling, reversing, etc.
-    - Cannot be instantiated (all methods are static)
+    **Bộ sưu tập (Lớp tiện ích):**
+    - Nó là một lớp tiện ích cung cấp các phương thức tĩnh cho các hoạt động thu thập
+    - Nằm ở `java.util` bưu kiện
+    - Chứa các phương pháp sắp xếp, tìm kiếm, xáo trộn, đảo ngược, v.v.
+    - Không thể khởi tạo được (tất cả các phương thức đều tĩnh)
 
     ```java
     import java.util.*;
@@ -2254,26 +2254,26 @@ Frequently asked Java Interview questions
     }
     ```
 
-    | Collection | Collections |
+    | Bộ sưu tập | Bộ sưu tập |
     |------------|-------------|
-    | Interface | Utility class |
-    | Used to represent a group of objects | Provides static methods for operations |
-    | Can be implemented | Cannot be instantiated |
-    | Root of Collection hierarchy | Helper class for Collection operations |
+    | Giao diện | Lớp tiện ích |
+    | Dùng để đại diện cho một nhóm đối tượng | Cung cấp các phương thức tĩnh cho hoạt động |
+    | Có thể thực hiện được | Không thể khởi tạo |
+    | Hệ thống phân cấp gốc của Bộ sưu tập | Lớp trợ giúp cho các hoạt động Bộ sưu tập |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-42. ### What is the difference between Set and List?
+42. ### Sự khác biệt giữa Tập hợp và Danh sách là gì?
 
-    Both Set and List are interfaces in the Java Collections Framework, but they have different characteristics:
+    Cả Set và List đều là các giao diện trong Java Collections Framework, nhưng chúng có các đặc điểm khác nhau:
 
-    | List | Set |
+    | Danh sách | Đặt |
     |------|-----|
-    | Allows duplicate elements | Does not allow duplicate elements |
-    | Maintains insertion order | May or may not maintain order (depends on implementation) |
-    | Elements can be accessed by index | No index-based access |
-    | Allows multiple null values | Allows at most one null value (HashSet, LinkedHashSet) |
-    | Implementations: ArrayList, LinkedList, Vector | Implementations: HashSet, LinkedHashSet, TreeSet |
+    | Cho phép các phần tử trùng lặp | Không cho phép các phần tử trùng lặp |
+    | Duy trì thứ tự chèn | Có thể duy trì trật tự hoặc không (tùy vào việc thực hiện) |
+    | Các phần tử có thể được truy cập theo chỉ mục | Không có quyền truy cập dựa trên chỉ mục |
+    | Cho phép nhiều giá trị null | Cho phép tối đa một giá trị null (HashSet, LinkedHashSet) |
+    | Triển khai: ArrayList, LinkedList, Vector | Triển khai: HashSet, LinkedHashSet, TreeSet |
 
     ```java
     import java.util.*;
@@ -2315,24 +2315,24 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **When to use:**
-    - Use **List** when you need to maintain insertion order and allow duplicates
-    - Use **Set** when you need to store unique elements only
+    **Khi nào nên sử dụng:**
+    - Sử dụng **Danh sách** khi bạn cần duy trì thứ tự chèn và cho phép trùng lặp
+    - Sử dụng **Set** khi bạn chỉ cần lưu trữ các phần tử duy nhất
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-43. ### What is the difference between HashSet and TreeSet?
+43. ### Sự khác biệt giữa HashSet và TreeSet là gì?
 
-    Both HashSet and TreeSet implement the Set interface but have different internal implementations and characteristics:
+    Cả HashSet và TreeSet đều triển khai giao diện Set nhưng có các đặc điểm và triển khai nội bộ khác nhau:
 
-    | HashSet | TreeSet |
+    | Bộ băm | Bộ cây |
     |---------|---------|
-    | Uses HashMap internally | Uses TreeMap (Red-Black Tree) internally |
-    | Does not maintain any order | Maintains elements in sorted (natural) order |
-    | Allows one null element | Does not allow null elements |
-    | O(1) for add, remove, contains | O(log n) for add, remove, contains |
-    | Uses hashCode() and equals() | Uses compareTo() or Comparator |
-    | Better performance for basic operations | Better when sorted order is needed |
+    | Sử dụng HashMap nội bộ | Sử dụng TreeMap (Cây đỏ-đen) nội bộ |
+    | Không duy trì trật tự nào | Duy trì các phần tử theo thứ tự được sắp xếp (tự nhiên) |
+    | Cho phép một phần tử null | Không cho phép phần tử null |
+    | O(1) để thêm, xóa, chứa | O(log n) để thêm, xóa, chứa |
+    | Sử dụng hashCode() và bằng() | Sử dụng CompareTo() hoặc Comparator |
+    | Hiệu suất tốt hơn cho các hoạt động cơ bản | Tốt hơn khi cần sắp xếp thứ tự |
 
     ```java
     import java.util.*;
@@ -2391,13 +2391,13 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-44. ### What is the diamond problem in Java?
+44. ### Vấn đề kim cương trong Java là gì?
 
-    The diamond problem is an ambiguity that arises in multiple inheritance when a class inherits from two classes that both inherit from a common superclass. It's called "diamond" because of the shape of the inheritance diagram.
+    Vấn đề kim cương là sự mơ hồ nảy sinh trong đa kế thừa khi một lớp kế thừa từ hai lớp mà cả hai đều kế thừa từ một siêu lớp chung. Nó được gọi là "kim cương" vì hình dạng của sơ đồ thừa kế.
 
-    **The Problem:**
+    **Vấn đề:**
     ```
            A
           / \
@@ -2405,10 +2405,10 @@ Frequently asked Java Interview questions
           \ /
            D
     ```
-    If class D inherits from both B and C, and both B and C override a method from A, which version should D use?
+    Nếu lớp D kế thừa từ cả B và C, đồng thời cả B và C đều ghi đè một phương thức từ A, thì D nên sử dụng phiên bản nào?
 
-    **Java's Solution:**
-    Java does not allow multiple inheritance with classes to avoid the diamond problem. However, with Java 8+ interfaces having default methods, a similar situation can occur:
+    **Giải pháp của Java:**
+    Java không cho phép đa kế thừa với các lớp để tránh vấn đề kim cương. Tuy nhiên, với các giao diện Java 8+ có các phương thức mặc định, tình huống tương tự có thể xảy ra:
 
     ```java
     interface A {
@@ -2453,10 +2453,10 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Resolution Rules in Java:**
-    1. **Class wins over interface:** If a class inherits a method from both a superclass and an interface, the class method takes precedence
-    2. **Subtype wins:** More specific interface's default method is chosen over less specific one
-    3. **Explicit resolution:** If still ambiguous, the class must explicitly override and specify which method to use
+    **Quy tắc giải quyết trong Java:**
+    1. **Lớp chiến thắng giao diện:** Nếu một lớp kế thừa một phương thức từ cả siêu lớp và giao diện, thì phương thức lớp đó sẽ được ưu tiên
+    2. **Loại phụ thắng:** Phương thức mặc định của giao diện cụ thể hơn được chọn thay vì phương thức ít cụ thể hơn
+    3. **Độ phân giải rõ ràng:** Nếu vẫn còn mơ hồ, lớp phải ghi đè rõ ràng và chỉ định phương thức nào sẽ sử dụng
 
     ```java
     class Parent {
@@ -2477,21 +2477,21 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-45. ### What is dependency injection?
+45. ### Nội dung phụ thuộc là gì?
 
-    Dependency Injection (DI) is a design pattern used to implement Inversion of Control (IoC). It allows the creation of dependent objects outside of a class and provides those objects to a class in different ways.
+    Dependency Insert (DI) là một mẫu thiết kế được sử dụng để triển khai Đảo ngược điều khiển (IoC). Nó cho phép tạo các đối tượng phụ thuộc bên ngoài một lớp và cung cấp các đối tượng đó cho một lớp theo nhiều cách khác nhau.
 
-    **Benefits of Dependency Injection:**
-    1. Loose coupling between classes
-    2. Easier unit testing (mock dependencies)
-    3. Better code reusability
-    4. Easier maintenance and flexibility
+    **Lợi ích của việc tiêm phụ thuộc:**
+    1. Khớp nối lỏng lẻo giữa các lớp
+    2. Kiểm tra đơn vị dễ dàng hơn (phụ thuộc giả)
+    3. Khả năng sử dụng lại mã tốt hơn
+    4. Bảo trì dễ dàng hơn và linh hoạt hơn
 
-    **Types of Dependency Injection:**
+    **Các loại chèn phụ thuộc:**
 
-    1. **Constructor Injection:**
+    1. **Tiêm hàm tạo:**
     ```java
     // Dependency
     interface MessageService {
@@ -2527,7 +2527,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    2. **Setter Injection:**
+    2. **Tiêm Setter:**
     ```java
     class NotificationService {
         private MessageService messageService;
@@ -2543,7 +2543,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    3. **Interface Injection:**
+    3. **Chèn giao diện:**
     ```java
     interface MessageServiceInjector {
         void injectMessageService(MessageService service);
@@ -2563,7 +2563,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Usage Example:**
+    **Ví dụ sử dụng:**
     ```java
     public class DIExample {
         public static void main(String[] args) {
@@ -2581,23 +2581,23 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Note:** Frameworks like Spring provide automatic dependency injection using annotations like `@Autowired`, `@Inject`.
+    **Lưu ý:** Các khung như Spring cung cấp tính năng chèn phụ thuộc tự động bằng cách sử dụng các chú thích như `@Autowired`, `@Inject`.
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-46. ### What is the difference between shallow copy and deep copy?
+46. ###Sự khác biệt giữa bản sao nông và bản sao sâu là gì?
 
-    When copying objects in Java, there are two types of copies: shallow copy and deep copy.
+    Khi sao chép các đối tượng trong Java, có hai loại bản sao: bản sao nông và bản sao sâu.
 
-    **Shallow Copy:**
-    - Creates a new object but copies references to nested objects
-    - Changes to nested objects affect both copies
-    - Default behavior of `clone()` method
+    **Bản sao nông:**
+    - Tạo một đối tượng mới nhưng sao chép các tham chiếu đến các đối tượng lồng nhau
+    - Những thay đổi đối với các đối tượng lồng nhau sẽ ảnh hưởng đến cả hai bản sao
+    - Hành vi mặc định của `clone()` phương pháp
 
-    **Deep Copy:**
-    - Creates a new object and recursively copies all nested objects
-    - Changes to nested objects don't affect the original
-    - Requires manual implementation
+    **Bản sao sâu:**
+    - Tạo một đối tượng mới và sao chép đệ quy tất cả các đối tượng lồng nhau
+    - Những thay đổi đối với các đối tượng lồng nhau không ảnh hưởng đến bản gốc
+    - Yêu cầu thực hiện thủ công
 
     ```java
     import java.util.ArrayList;
@@ -2675,51 +2675,51 @@ Frequently asked Java Interview questions
     }
     ```
 
-    | Shallow Copy | Deep Copy |
+    | Sao chép nông | Bản sao sâu |
     |--------------|-----------|
-    | Copies object references | Copies actual objects |
-    | Nested objects are shared | Nested objects are independent |
-    | Faster and less memory | Slower and more memory |
-    | Changes affect both copies | Changes are isolated |
-    | Default clone() behavior | Requires custom implementation |
+    | Sao chép tài liệu tham khảo đối tượng | Sao chép các đối tượng thực tế |
+    | Các đối tượng lồng nhau được chia sẻ | Các đối tượng lồng nhau là độc lập |
+    | Nhanh hơn và ít bộ nhớ hơn | Chậm hơn và nhiều bộ nhớ hơn |
+    | Những thay đổi ảnh hưởng đến cả hai bản | Những thay đổi bị cô lập |
+    | Hành vi clone() mặc định | Yêu cầu triển khai tùy chỉnh |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-47. ### What are design patterns in Java?
+47. ### Các mẫu thiết kế trong Java là gì?
 
-    Design patterns are reusable solutions to common problems in software design. They represent best practices and provide templates for solving design challenges.
+    Các mẫu thiết kế là các giải pháp có thể tái sử dụng cho các vấn đề thường gặp trong thiết kế phần mềm. Chúng đại diện cho các phương pháp hay nhất và cung cấp các mẫu để giải quyết các thách thức về thiết kế.
 
-    **Categories of Design Patterns:**
+    **Các loại mẫu thiết kế:**
 
-    1. **Creational Patterns** - Deal with object creation mechanisms
+    1. **Mẫu sáng tạo** - Xử lý các cơ chế tạo đối tượng
        - Singleton
-       - Factory Method
-       - Abstract Factory
-       - Builder
-       - Prototype
+       - Phương pháp xuất xưởng
+       - Nhà máy trừu tượng
+       - Người xây dựng
+       - Nguyên mẫu
 
-    2. **Structural Patterns** - Deal with object composition
-       - Adapter
-       - Bridge
-       - Composite
-       - Decorator
-       - Facade
-       - Flyweight
-       - Proxy
+    2. **Mẫu cấu trúc** - Xử lý thành phần đối tượng
+       - Bộ chuyển đổi
+       - Cầu
+       - tổng hợp
+       - Người trang trí
+       - mặt tiền
+       - Hạng ruồi
+       - ủy quyền
 
-    3. **Behavioral Patterns** - Deal with object interaction
-       - Chain of Responsibility
-       - Command
-       - Iterator
-       - Mediator
-       - Memento
-       - Observer
-       - State
-       - Strategy
-       - Template Method
-       - Visitor
+    3. **Mô hình hành vi** - Xử lý tương tác với đối tượng
+       - Chuỗi trách nhiệm
+       - Yêu cầu
+       - Trình vòng lặp
+       - Người hòa giải
+       - vật lưu niệm
+       - Người quan sát
+       - Tình trạng
+       - Chiến lược
+       - Phương pháp mẫu
+       - khách truy cập
 
-    **Common Design Patterns Examples:**
+    **Ví dụ về các mẫu thiết kế phổ biến:**
 
     ```java
     // 1. SINGLETON - Only one instance
@@ -2798,15 +2798,15 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-48. ### What is the factory design pattern?
+48. ###Mẫu thiết kế nhà xưởng là gì?
 
-    The Factory Design Pattern is a creational pattern that provides an interface for creating objects without specifying their exact classes. It delegates the instantiation logic to subclasses or factory methods.
+    Mẫu thiết kế nhà máy là một mẫu sáng tạo cung cấp giao diện để tạo các đối tượng mà không chỉ định các lớp chính xác của chúng. Nó ủy quyền logic khởi tạo cho các lớp con hoặc các phương thức xuất xưởng.
 
-    **Types of Factory Patterns:**
+    **Các loại mẫu nhà máy:**
 
-    1. **Simple Factory (Static Factory Method):**
+    1. **Nhà máy đơn giản (Phương pháp nhà máy tĩnh):**
     ```java
     interface Shape {
         void draw();
@@ -2859,7 +2859,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    2. **Factory Method Pattern:**
+    2. **Mẫu phương thức nhà máy:**
     ```java
     // Product interface
     interface Vehicle {
@@ -2917,22 +2917,22 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Benefits:**
-    - Loose coupling between creator and products
-    - Single Responsibility Principle - creation code in one place
-    - Open/Closed Principle - easy to add new product types
-    - Easier unit testing with mock objects
+    **Những lợi ích:**
+    - Sự kết nối lỏng lẻo giữa người sáng tạo và sản phẩm
+    - Nguyên tắc trách nhiệm duy nhất - mã tạo ở một nơi
+    - Nguyên tắc mở/đóng - dễ dàng thêm loại sản phẩm mới
+    - Kiểm tra đơn vị dễ dàng hơn với các đối tượng giả
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-49. ### What is the builder design pattern?
+49. ### Mẫu thiết kế của người xây dựng là gì?
 
-    The Builder Design Pattern is a creational pattern that separates the construction of a complex object from its representation. It allows step-by-step construction of objects and produces different representations using the same construction process.
+    Mẫu thiết kế Builder là một mẫu sáng tạo tách biệt việc xây dựng một đối tượng phức tạp khỏi cách trình bày của nó. Nó cho phép xây dựng các đối tượng theo từng bước và tạo ra các cách biểu diễn khác nhau bằng cách sử dụng cùng một quy trình xây dựng.
 
-    **When to use:**
-    - When object has many optional parameters
-    - When object creation involves many steps
-    - When you want immutable objects with many fields
+    **Khi nào nên sử dụng:**
+    - Khi đối tượng có nhiều tham số tùy chọn
+    - Khi việc tạo đối tượng bao gồm nhiều bước
+    - Khi bạn muốn các đối tượng bất biến với nhiều trường
 
     ```java
     // Product class with many fields
@@ -3062,27 +3062,27 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Benefits:**
-    - Readable code with method chaining (fluent interface)
-    - Immutable objects can be created easily
-    - Clear separation of construction and representation
-    - Avoids telescoping constructor anti-pattern
+    **Những lợi ích:**
+    - Mã có thể đọc được với chuỗi phương thức (giao diện trôi chảy)
+    - Các đối tượng bất biến có thể được tạo dễ dàng
+    - Sự tách biệt rõ ràng giữa xây dựng và thể hiện
+    - Tránh mô hình chống xây dựng kính thiên văn
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-50. ### What is the difference between Heap and Stack memory?
+50. ### Sự khác biệt giữa bộ nhớ Heap và Stack là gì?
 
-    Java memory is divided into two main areas: Heap and Stack. Understanding their differences is crucial for memory management.
+    Bộ nhớ Java được chia thành hai khu vực chính: Heap và Stack. Hiểu được sự khác biệt của chúng là rất quan trọng để quản lý bộ nhớ.
 
-    | Stack Memory | Heap Memory |
+    | Bộ nhớ ngăn xếp | Bộ nhớ đống |
     |--------------|-------------|
-    | Stores method calls and local variables | Stores objects and instance variables |
-    | LIFO (Last In First Out) structure | No specific order |
-    | Thread-safe (each thread has own stack) | Shared among all threads |
-    | Memory allocation/deallocation is automatic | Managed by Garbage Collector |
-    | Fixed size (can cause StackOverflowError) | Dynamic size (can cause OutOfMemoryError) |
-    | Faster access | Slower access |
-    | Stores primitive values and references | Stores actual objects |
+    | Lưu trữ các lệnh gọi phương thức và biến cục bộ | Lưu trữ các đối tượng và biến thể hiện |
+    | Cấu trúc LIFO (Vào sau ra trước) | Không có thứ tự cụ thể |
+    | An toàn cho luồng (mỗi luồng có ngăn xếp riêng) | Được chia sẻ giữa tất cả các chủ đề |
+    | Cấp phát/giải phóng bộ nhớ là tự động | Được quản lý bởi Người thu gom rác |
+    | Kích thước cố định (có thể gây ra StackOverflowError) | Kích thước động (có thể gây ra OutOfMemoryError) |
+    | Truy cập nhanh hơn | Truy cập chậm hơn |
+    | Lưu trữ các giá trị nguyên thủy và tham chiếu | Lưu trữ các đối tượng thực tế |
 
     ```java
     public class MemoryExample {
@@ -3131,7 +3131,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Memory Visualization:**
+    **Hình dung bộ nhớ:**
     ```
     STACK                          HEAP
     ┌─────────────────┐            ┌─────────────────────────────────┐
@@ -3151,23 +3151,23 @@ Frequently asked Java Interview questions
                                    └─────────────────────────────────┘
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-51. ### What is garbage collection in Java?
+51. ### Thu gom rác trong Java là gì?
 
-    Garbage Collection (GC) is an automatic memory management feature in Java that identifies and removes objects that are no longer in use, freeing up heap memory for new objects.
+    Garbage Collection (GC) là một tính năng quản lý bộ nhớ tự động trong Java nhằm xác định và loại bỏ các đối tượng không còn được sử dụng, giải phóng bộ nhớ heap cho các đối tượng mới.
 
-    **How Garbage Collection Works:**
+    **Cách hoạt động của bộ sưu tập rác:**
 
-    1. **Mark Phase:** GC identifies which objects are still reachable (in use)
-    2. **Sweep Phase:** GC removes unreachable objects
-    3. **Compact Phase (optional):** GC compacts remaining objects to reduce fragmentation
+    1. **Giai đoạn đánh dấu:** GC xác định những đối tượng nào vẫn có thể truy cập được (đang sử dụng)
+    2. **Giai đoạn quét:** GC loại bỏ các đối tượng không thể tiếp cận
+    3. **Giai đoạn thu gọn (tùy chọn):** GC nén các đối tượng còn lại để giảm phân mảnh
 
-    **When does an object become eligible for GC?**
-    - When no references point to it
-    - When reference is set to null
-    - When reference is reassigned
-    - When object goes out of scope
+    **Khi nào một đối tượng đủ điều kiện cho GC?**
+    - Khi không có tài liệu tham khảo trỏ đến nó
+    - Khi tham chiếu được đặt thành null
+    - Khi tham chiếu được gán lại
+    - Khi đối tượng đi ra khỏi phạm vi
 
     ```java
     public class GarbageCollectionDemo {
@@ -3237,7 +3237,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **JVM Heap Generations:**
+    **Các thế hệ vùng heap của JVM:**
     ```
     ┌────────────────────────────────────────────────────────────┐
     │                          HEAP                              │
@@ -3252,14 +3252,14 @@ Frequently asked Java Interview questions
     └─────────────────────────────┴──────────────────────────────┘
     ```
 
-    **GC Process:**
-    1. New objects are allocated in Eden space
-    2. When Eden fills up, Minor GC occurs
-    3. Surviving objects move to Survivor space
-    4. Objects that survive multiple Minor GCs move to Old Generation
-    5. When Old Generation fills up, Major GC (Full GC) occurs
+    **Quy trình GC:**
+    1. Các đối tượng mới được phân bổ trong không gian Eden
+    2. Khi Eden đầy, Minor GC xảy ra
+    3. Các vật thể sống sót di chuyển đến không gian Survivor
+    4. Các đối tượng tồn tại qua nhiều GC nhỏ sẽ chuyển sang Thế hệ cũ
+    5. Khi Thế hệ cũ đầy, GC chính (GC đầy đủ) xảy ra
 
-    **JVM GC Options:**
+    **Tùy chọn JVM GC:**
     ```bash
     # Set heap size
     java -Xms256m -Xmx1024m MyApp
@@ -3273,41 +3273,41 @@ Frequently asked Java Interview questions
     java -Xlog:gc* MyApp             # Java 9+
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-52. ### What are the different types of garbage collectors in Java?
+52. ### Các loại trình thu gom rác khác nhau trong Java là gì?
 
-    Java provides several garbage collector implementations, each optimized for different scenarios:
+    Java cung cấp một số triển khai thu gom rác, mỗi triển khai được tối ưu hóa cho các tình huống khác nhau:
 
-    **1. Serial Garbage Collector (-XX:+UseSerialGC)**
-    - Uses single thread for garbage collection
-    - Best for single-threaded applications
-    - Causes "stop-the-world" pauses
-    - Suitable for small applications with small heaps
+    **1. Bộ thu gom rác nối tiếp (-XX:+UseSerialGC)**
+    - Sử dụng một luồng để thu gom rác
+    - Tốt nhất cho các ứng dụng đơn luồng
+    - Gây ra sự tạm dừng "stop-the-world"
+    - Thích hợp cho các ứng dụng nhỏ với đống nhỏ
 
-    **2. Parallel Garbage Collector (-XX:+UseParallelGC)**
-    - Uses multiple threads for garbage collection
-    - Also known as "throughput collector"
-    - Default GC in Java 8
-    - Good for multi-threaded applications requiring high throughput
+    **2. Bộ thu gom rác song song (-XX:+UseParallelGC)**
+    - Sử dụng nhiều luồng để thu gom rác
+    - Còn được gọi là "bộ thu thông lượng"
+    - GC mặc định trong Java 8
+    - Tốt cho các ứng dụng đa luồng yêu cầu thông lượng cao
 
-    **3. G1 Garbage Collector (-XX:+UseG1GC)**
-    - Divides heap into regions
-    - Designed for large heaps (> 4GB)
-    - Default GC from Java 9 onwards
-    - Balances throughput and latency
-    - Predictable pause times
+    **3. Máy thu gom rác G1 (-XX:+UseG1GC)**
+    - Chia heap thành các vùng
+    - Được thiết kế cho các đống lớn (> 4GB)
+    - GC mặc định từ Java 9 trở đi
+    - Cân bằng thông lượng và độ trễ
+    - Thời gian tạm dừng có thể dự đoán được
 
-    **4. Z Garbage Collector (-XX:+UseZGC)**
-    - Introduced in Java 11
-    - Ultra-low latency (< 10ms pause times)
-    - Handles heaps from 8MB to 16TB
-    - Concurrent garbage collection
+    **4. Máy thu gom rác Z (-XX:+UseZGC)**
+    - Được giới thiệu trong Java 11
+    - Độ trễ cực thấp (<10ms thời gian tạm dừng)
+    - Xử lý đống từ 8MB đến 16TB
+    - Thu gom rác đồng thời
 
-    **5. Shenandoah Garbage Collector (-XX:+UseShenandoahGC)**
-    - Low pause time garbage collector
-    - Performs concurrent compaction
-    - Available in OpenJDK
+    **5. Người thu gom rác Shenandoah (-XX:+UseShenandoahGC)**
+    - Trình thu gom rác có thời gian tạm dừng thấp
+    - Thực hiện nén đồng thời
+    - Có sẵn trong OpenJDK
 
     ```java
     public class GCDemo {
@@ -3324,7 +3324,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **JVM Options for GC:**
+    **Tùy chọn JVM cho GC:**
     ```bash
     # Serial GC
     java -XX:+UseSerialGC -jar app.jar
@@ -3339,27 +3339,27 @@ Frequently asked Java Interview questions
     java -XX:+UseZGC -jar app.jar
     ```
 
-    | GC Type | Best For | Pause Time | Throughput |
+    | Loại GC | Tốt nhất cho | Tạm dừng thời gian | Thông lượng |
     |---------|----------|------------|------------|
-    | Serial | Small apps | High | Low |
-    | Parallel | Throughput apps | Medium | High |
-    | G1 | Large heaps | Low-Medium | Medium-High |
-    | ZGC | Low latency | Very Low | Medium |
+    | Nối tiếp | Ứng dụng nhỏ | Cao | Thấp |
+    | Song song | Ứng dụng thông lượng | Trung bình | Cao |
+    | G1 | Đống lớn | Thấp-Trung bình | Trung bình-Cao |
+    | ZGC | Độ trễ thấp | Rất Thấp | Trung bình |
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-53. ### What is the difference between wait() and sleep() methods?
+53. ### Sự khác biệt giữa phương thức wait() và sleep() là gì?
 
-    Both `wait()` and `sleep()` are used to pause thread execution, but they have significant differences:
+    Cả hai `wait()` Và `sleep()` được sử dụng để tạm dừng thực thi luồng, nhưng chúng có những khác biệt đáng kể:
 
-    | wait() | sleep() |
+    | chờ đợi() | ngủ() |
     |--------|---------|
-    | Defined in Object class | Defined in Thread class |
-    | Releases the lock/monitor | Does not release the lock |
-    | Must be called from synchronized context | Can be called from anywhere |
-    | Can be woken up by notify()/notifyAll() | Cannot be woken up (except interrupt) |
-    | Used for inter-thread communication | Used for introducing delay |
-    | Instance method | Static method |
+    | Được định nghĩa trong lớp Đối tượng | Được xác định trong lớp Thread |
+    | Nhả khóa/màn hình | Không nhả khóa |
+    | Phải được gọi từ ngữ cảnh được đồng bộ hóa | Có thể được gọi từ bất cứ đâu |
+    | Có thể được đánh thức bằng cách thông báo()/notifyAll() | Không thể đánh thức (trừ ngắt) |
+    | Được sử dụng để liên lạc giữa các luồng | Được sử dụng để giới thiệu độ trễ |
+    | Phương pháp dụ | Phương pháp tĩnh |
 
     ```java
     public class WaitVsSleep {
@@ -3410,24 +3410,24 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Key Points:**
-    - `wait()` is used for coordination between threads
-    - `sleep()` is used to pause execution for a specific time
-    - Always call `wait()` inside a synchronized block
-    - `wait()` can be interrupted by `notify()` before timeout
+    **Những điểm chính:**
+    - `wait()` được sử dụng để phối hợp giữa các chủ đề
+    - `sleep()` được sử dụng để tạm dừng thực hiện trong một thời gian cụ thể
+    - Luôn gọi `wait()` bên trong một khối được đồng bộ hóa
+    - `wait()` có thể bị gián đoạn bởi `notify()` trước khi hết thời gian
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-54. ### What is the difference between notify() and notifyAll()?
+54. ### Sự khác biệt giữa thông báo() và thông báoAll() là gì?
 
-    Both `notify()` and `notifyAll()` are methods in the Object class used to wake up threads waiting on an object's monitor.
+    Cả hai `notify()` Và `notifyAll()` là các phương thức trong lớp Object được sử dụng để đánh thức các luồng đang chờ trên màn hình của đối tượng.
 
-    | notify() | notifyAll() |
+    | thông báo() | thông báoAll() |
     |----------|-------------|
-    | Wakes up only one waiting thread | Wakes up all waiting threads |
-    | Which thread is woken is not guaranteed | All threads compete for the lock |
-    | More efficient when only one thread needs to proceed | Safer when multiple threads may need the resource |
-    | Can cause thread starvation | No starvation, but more overhead |
+    | Chỉ đánh thức một chủ đề đang chờ | Đánh thức tất cả các chủ đề đang chờ |
+    | Chủ đề nào được đánh thức không được đảm bảo | Tất cả các chủ đề đều cạnh tranh để giành khóa |
+    | Hiệu quả hơn khi chỉ cần một luồng cần tiến hành | An toàn hơn khi nhiều luồng có thể cần tài nguyên |
+    | Có thể gây ra tình trạng đói luồng | Không bị đói nhưng tốn nhiều chi phí hơn |
 
     ```java
     public class NotifyVsNotifyAll {
@@ -3497,29 +3497,29 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **When to use:**
-    - Use `notify()` when only one thread can proceed (e.g., single resource)
-    - Use `notifyAll()` when multiple threads might be able to proceed or when condition varies
+    **Khi nào nên sử dụng:**
+    - Sử dụng `notify()` khi chỉ có một luồng có thể tiếp tục (ví dụ: một tài nguyên)
+    - Sử dụng `notifyAll()` khi nhiều luồng có thể tiếp tục hoặc khi điều kiện thay đổi
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-55. ### What is an immutable class and how to create one?
+55. ### Lớp bất biến là gì và cách tạo lớp đó như thế nào?
 
-    An immutable class is a class whose instances cannot be modified after creation. Once an object is created, its state remains constant throughout its lifetime.
+    Lớp bất biến là lớp mà các thể hiện của nó không thể sửa đổi sau khi tạo. Khi một đối tượng được tạo, trạng thái của nó sẽ không đổi trong suốt vòng đời của nó.
 
-    **Benefits of Immutability:**
-    - Thread-safe without synchronization
-    - Can be safely shared and cached
-    - Good for hash keys (hashCode never changes)
-    - Easier to reason about
+    **Lợi ích của tính bất biến:**
+    - An toàn cho luồng mà không cần đồng bộ hóa
+    - Có thể được chia sẻ và lưu trữ một cách an toàn
+    - Tốt cho các khóa băm (hashCode không bao giờ thay đổi)
+    - Dễ dàng lý luận hơn
 
-    **Rules for Creating Immutable Class:**
-    1. Declare the class as `final`
-    2. Make all fields `private` and `final`
-    3. Don't provide setter methods
-    4. Initialize all fields via constructor
-    5. Perform deep copy for mutable objects
-    6. Return copies of mutable objects in getters
+    **Quy tắc tạo lớp bất biến:**
+    1. Khai báo lớp như `final`
+    2. Tạo tất cả các trường `private` Và `final`
+    3. Không cung cấp phương thức setter
+    4. Khởi tạo tất cả các trường thông qua hàm tạo
+    5. Thực hiện sao chép sâu cho các đối tượng có thể thay đổi
+    6. Trả về bản sao của các đối tượng có thể thay đổi trong getters
 
     ```java
     import java.util.ArrayList;
@@ -3589,7 +3589,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Java Record (Java 14+):**
+    **Bản ghi Java (Java 14+):**
     ```java
     // Records are immutable by default
     public record Person(String name, int age) {
@@ -3597,19 +3597,19 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-56. ### What is the difference between String, StringBuilder, and StringBuffer?
+56. ### Sự khác biệt giữa String, StringBuilder và StringBuffer là gì?
 
-    All three are used to handle strings in Java, but they have different characteristics:
+    Cả ba đều được sử dụng để xử lý các chuỗi trong Java, nhưng chúng có các đặc điểm khác nhau:
 
-    | Feature | String | StringBuilder | StringBuffer |
+    | Tính năng | Chuỗi | StringBuilder | Bộ đệm chuỗi |
     |---------|--------|---------------|--------------|
-    | Mutability | Immutable | Mutable | Mutable |
-    | Thread Safety | Thread-safe (immutable) | Not thread-safe | Thread-safe (synchronized) |
-    | Performance | Slower for concatenation | Fastest | Slower than StringBuilder |
-    | Storage | String Pool | Heap | Heap |
-    | Since | Java 1.0 | Java 1.5 | Java 1.0 |
+    | Khả năng biến đổi | Bất biến | Có thể thay đổi | Có thể thay đổi |
+    | An toàn chủ đề | Chủ đề an toàn (không thay đổi) | Không an toàn theo chủ đề | An toàn chủ đề (đồng bộ hóa) |
+    | Hiệu suất | Nối chậm hơn | Nhanh nhất | Chậm hơn StringBuilder |
+    | Lưu trữ | Bể dây | Đống | Đống |
+    | Kể từ | Java 1.0 | Java 1.5 | Java 1.0 |
 
     ```java
     public class StringComparison {
@@ -3662,7 +3662,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Common Methods (StringBuilder/StringBuffer):**
+    **Các phương thức phổ biến (StringBuilder/StringBuffer):**
     ```java
     StringBuilder sb = new StringBuilder("Hello");
     sb.append(" World");           // Append
@@ -3673,25 +3673,25 @@ Frequently asked Java Interview questions
     String result = sb.toString(); // Convert to String
     ```
 
-    **When to use:**
-    - **String:** When string won't change much
-    - **StringBuilder:** When string changes frequently (single-threaded)
-    - **StringBuffer:** When string changes frequently (multi-threaded)
+    **Khi nào nên sử dụng:**
+    - **Chuỗi:** Khi chuỗi không thay đổi nhiều
+    - **StringBuilder:** Khi chuỗi thay đổi thường xuyên (đơn luồng)
+    - **StringBuffer:** Khi chuỗi thay đổi thường xuyên (đa luồng)
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-57. ### What is the difference between static and instance variables?
+57. ### Sự khác biệt giữa biến tĩnh và biến thể hiện là gì?
 
-    Static variables belong to the class, while instance variables belong to individual objects.
+    Các biến tĩnh thuộc về lớp, trong khi các biến thể hiện thuộc về các đối tượng riêng lẻ.
 
-    | Static Variable | Instance Variable |
+    | Biến tĩnh | Biến thể hiện |
     |-----------------|-------------------|
-    | Belongs to class | Belongs to object |
-    | Single copy shared by all instances | Each instance has its own copy |
-    | Declared with `static` keyword | Declared without `static` keyword |
-    | Accessed via class name | Accessed via object reference |
-    | Memory allocated once when class loads | Memory allocated when object is created |
-    | Stored in Method Area | Stored in Heap |
+    | Thuộc lớp | Thuộc đối tượng |
+    | Bản sao duy nhất được chia sẻ bởi tất cả các phiên bản | Mỗi phiên bản có bản sao riêng |
+    | Khai báo với `static` từ khóa | Tuyên bố mà không có `static` từ khóa |
+    | Truy cập qua tên lớp | Truy cập thông qua tham chiếu đối tượng |
+    | Bộ nhớ được cấp phát một lần khi tải lớp | Bộ nhớ được cấp phát khi đối tượng được tạo |
+    | Được lưu trữ trong Khu vực Phương thức | Được lưu trữ trong Heap |
 
     ```java
     public class Employee {
@@ -3754,7 +3754,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Static Block:**
+    **Khối tĩnh:**
     ```java
     class StaticDemo {
         static int value;
@@ -3767,13 +3767,13 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-58. ### What is the purpose of the super keyword?
+58. ### Mục đích của từ khóa super là gì?
 
-    The `super` keyword in Java is used to refer to the immediate parent class. It has three main uses:
+    các `super` từ khóa trong Java được dùng để chỉ lớp cha trực tiếp. Nó có ba công dụng chính:
 
-    **1. Access Parent Class Variables:**
+    **1. Truy cập các biến lớp cha:**
     ```java
     class Animal {
         String name = "Animal";
@@ -3789,7 +3789,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **2. Call Parent Class Methods:**
+    **2. Gọi các phương thức lớp cha mẹ:**
     ```java
     class Animal {
         void eat() {
@@ -3806,7 +3806,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **3. Call Parent Class Constructor:**
+    **3. Gọi hàm tạo của lớp cha:**
     ```java
     class Person {
         String name;
@@ -3830,7 +3830,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Complete Example:**
+    **Ví dụ đầy đủ:**
     ```java
     class Vehicle {
         String brand = "Generic";
@@ -3887,13 +3887,13 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-59. ### What is the purpose of the this keyword?
+59. ### Mục đích của từ khóa này là gì?
 
-    The `this` keyword in Java refers to the current object instance. It has several uses:
+    các `this` từ khóa trong Java đề cập đến phiên bản đối tượng hiện tại. Nó có một số công dụng:
 
-    **1. Distinguish Instance Variables from Parameters:**
+    **1. Phân biệt các biến thể hiện với các tham số:**
     ```java
     class Person {
         String name;
@@ -3906,7 +3906,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **2. Call Another Constructor (Constructor Chaining):**
+    **2. Gọi một hàm tạo khác (Chuỗi hàm tạo):**
     ```java
     class Employee {
         String name;
@@ -3929,7 +3929,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **3. Pass Current Object as Parameter:**
+    **3. Truyền đối tượng hiện tại làm tham số:**
     ```java
     class Calculator {
         int value;
@@ -3948,7 +3948,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **4. Return Current Object (Method Chaining/Fluent Interface):**
+    **4. Trả về đối tượng hiện tại (Xâu chuỗi phương thức/Giao diện thông thạo):**
     ```java
     class Builder {
         private String name;
@@ -3987,7 +3987,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **5. Reference Current Class Instance in Inner Class:**
+    **5. Tham chiếu Phiên bản lớp hiện tại trong Lớp bên trong:**
     ```java
     class Outer {
         int value = 10;
@@ -4005,19 +4005,19 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-60. ### What are generics in Java?
+60. ### Generics trong Java là gì?
 
-    Generics enable types (classes and interfaces) to be parameters when defining classes, interfaces, and methods. They provide compile-time type safety and eliminate the need for casting.
+    Generics cho phép các loại (lớp và giao diện) trở thành tham số khi xác định lớp, giao diện và phương thức. Chúng cung cấp sự an toàn cho kiểu thời gian biên dịch và loại bỏ nhu cầu truyền.
 
-    **Benefits of Generics:**
-    - Type safety at compile time
-    - Elimination of casts
-    - Code reusability
-    - Enable generic algorithms
+    **Lợi ích của thuốc gốc:**
+    - Nhập an toàn tại thời điểm biên dịch
+    - Loại bỏ phôi
+    - Khả năng sử dụng lại mã
+    - Kích hoạt các thuật toán chung
 
-    **Generic Class:**
+    **Lớp chung:**
     ```java
     // Generic class with type parameter T
     class Box<T> {
@@ -4047,7 +4047,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Generic Method:**
+    **Phương pháp chung:**
     ```java
     class Utilities {
         // Generic method
@@ -4070,7 +4070,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Bounded Type Parameters:**
+    **Thông số loại giới hạn:**
     ```java
     // Upper bound - T must extend Number
     class NumberBox<T extends Number> {
@@ -4095,7 +4095,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Wildcards:**
+    **Ký tự đại diện:**
     ```java
     class WildcardDemo {
         // Unbounded wildcard
@@ -4123,7 +4123,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Usage Example:**
+    **Ví dụ sử dụng:**
     ```java
     public class GenericsDemo {
         public static void main(String[] args) {
@@ -4153,13 +4153,13 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
-61. ### What is type erasure in Java generics?
+61. ### Xóa kiểu trong Java generics là gì?
 
-    Type erasure is the process by which the Java compiler removes all generic type information during compilation. Generic type parameters are replaced with their bounds or Object, and type casts are inserted where necessary.
+    Xóa kiểu là quá trình trình biên dịch Java loại bỏ tất cả thông tin kiểu chung trong quá trình biên dịch. Các tham số loại chung được thay thế bằng giới hạn hoặc Đối tượng của chúng và các kiểu ép kiểu được chèn khi cần thiết.
 
-    **How Type Erasure Works:**
+    **Cách thức hoạt động của tính năng Xóa:**
 
     ```java
     // Before compilation (source code)
@@ -4189,7 +4189,7 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Bounded Type Erasure:**
+    **Xóa kiểu giới hạn:**
     ```java
     // Before erasure
     public class NumberBox<T extends Number> {
@@ -4210,8 +4210,8 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Bridge Methods:**
-    The compiler generates bridge methods to preserve polymorphism:
+    **Phương pháp bắc cầu:**
+    Trình biên dịch tạo ra các phương thức cầu nối để duy trì tính đa hình:
 
     ```java
     class Node<T> {
@@ -4236,7 +4236,7 @@ Frequently asked Java Interview questions
     // }
     ```
 
-    **Implications of Type Erasure:**
+    **Ý nghĩa của việc xóa kiểu:**
 
     ```java
     public class TypeErasureDemo {
@@ -4270,18 +4270,18 @@ Frequently asked Java Interview questions
     }
     ```
 
-    **Why Type Erasure?**
-    - Backward compatibility with pre-generics code
-    - No need for new bytecode instructions
-    - Reduced memory footprint (no runtime type info)
+    **Tại sao phải gõ Xóa?**
+    - Khả năng tương thích ngược với mã tiền generic
+    - Không cần hướng dẫn mã byte mới
+    - Giảm dung lượng bộ nhớ (không có thông tin loại thời gian chạy)
 
-    **Limitations:**
-    - Cannot determine generic type at runtime
-    - Cannot create generic arrays
-    - Cannot use primitives as type parameters
-    - Cannot catch or throw generic exceptions
+    **Hạn chế:**
+    - Không thể xác định loại chung khi chạy
+    - Không thể tạo mảng chung
+    - Không thể sử dụng nguyên thủy làm tham số kiểu
+    - Không thể bắt hoặc ném các ngoại lệ chung
 
-    **[⬆ Back to Top](#table-of-contents)**
+    **[⬆ Quay lại đầu trang](#table-of-contents)**
 
 
 <!-- QUESTIONS_END -->
